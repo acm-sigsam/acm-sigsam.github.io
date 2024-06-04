@@ -1,0 +1,61 @@
+- title: News
+  url: /services
+  subpages:
+    - title: Pet Sitting
+      url: /pet-sitting
+    - title: Pet Bathing
+      url: /pet-bathingxw
+    - title: Dog Walking
+      url: /dog-walking
+
+- title: Conferences
+  url: /Conferences
+  subpages:
+    - title: Upcoming
+      url: /UpcomingConferences
+    - title: Past
+      url: /PastConferences
+    - title: Conference Series
+      url: /ConferenceSeries
+
+- title: Journals
+  url: /Journals
+  subpages:
+    - title: Pet Food
+      url: /petfood
+    - title: Pet Toys
+      url: /pet-toys
+    - title: Pet Treats
+      url: /pet-treats
+
+- title: Software
+  url: /Software
+  subpages:
+    - title: Pet Food
+      url: /petfood
+    - title: Pet Toys
+      url: /pet-toys
+    - title: Pet Treats
+      url: /pet-treats
+
+
+- title: Awards
+  url: /Awards
+  subpages:
+    - title: Jenks Prize
+      url: /JenksPrize
+    - title: ACM Fellows
+      url: /ACMFellows
+    - title: ISSAC awards
+      url: /ISSACAwards
+
+
+- title: CCA
+  url: /CCA
+ 
+- title: About
+  url: /About
+  
+- title: Join
+  url: /Join
+ 
