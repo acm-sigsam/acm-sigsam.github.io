@@ -3,25 +3,31 @@
   <div class="wrapper">
 
      <a class="site-title" href="{{ site.baseurl }}/"></a>
-     
-      <!-- Navigation -->
-      <div class="b-nav">
-        <li><a class="b-link b-link--active" href="#">Home</a></li>
-        <li><a class="b-link" href="#">About</a></li>
-        <li><a class="b-link" href="#">Portfolio</a></li>
-        <li><a class="b-link" href="#">Contact</a></li>
-      </div>
 
-      <!-- Burger-Icon -->
-      <div class="b-container">
-        <div class="b-menu">
-          <div class="b-bun b-bun--top"></div>
-          <div class="b-bun b-bun--mid"></div>
-          <div class="b-bun b-bun--bottom"></div>
-        </div>
 
-        <!-- Burger-Brand -->
-        <a href="#" class="b-brand">Burger</a>
-      </div>
+      <nav id=“site-nav” class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid"> 
+          <a class="navbar-brand" href="#">Navbar</a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> 
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      {% for section in site.data.menu %}
+                      <li class="nav-item dropdown " >
+                          <a class=“nav-link dropdown-toggle” href="{{ section.url }}">{{ section.title }}</a>
+                          {% if section.subpages %}
+                          <ul class="dropdown-menu " >
+                              {% for page in section.subpages %}
+                              <li ><a class=“dropdown-item” href="{{ page.url }}">{{ page.title }}</a></li>
+                              {% endfor %}
+                          </ul>
+                          {% endif %}
+                      </li>
+                      {% endfor %}                
+                  </ul>        
+              </div>
+          </div>
+      </nav>
   </div>
 </header>

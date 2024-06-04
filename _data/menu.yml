@@ -1,13 +1,4 @@
-- title: News
-  url: /services
-  subpages:
-    - title: Pet Sitting
-      url: /pet-sitting
-    - title: Pet Bathing
-      url: /pet-bathingxw
-    - title: Dog Walking
-      url: /dog-walking
-
+ 
 - title: Conferences
   url: /Conferences
   subpages:
