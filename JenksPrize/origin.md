@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 In September, 2003, before his death in December, Dick talked to several persons in the computer algebra community about his desire to establish a prize in software engineering as applied to computer algebra. The prize was to be started with the residual funds from the Computers and Mathematics conferences that he and David Chudnovsky had organized. He discussed a number of his ideas with us in broad terms, but he became incapacitated before all the details could be worked out. We thus carried on trying to do what we thought he wanted. The only directive we did not follow was, "Do not name the prize for me."

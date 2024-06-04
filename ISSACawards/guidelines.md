@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 <center>
   <h1> 

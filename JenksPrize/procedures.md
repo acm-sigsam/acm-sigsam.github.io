@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 <h2>Eligible Software</h2>
