@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+
+
+        <div class="container ">
+            <div class="row align-items-start">
+              <div class="col-lg-6">
+                <h1>News</h1> 
+          
+                {% for post in site.news %}
+                 <article>
+                   <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+                   <h3>
+                     <a href="{{ post.url }}">
+                       {{ post.title }}
+                     </a>
+                   </h3>
+                   
+                   {{ post.content }}
+                 </article>
+               {% endfor %}
+              </div>
+
+              <div class="col-lg-6">
+                <h1>Upcoming Conferences</h1> 
+          
+                {% for item in site.conferences %}
+                 <article  future-date="{{ item.date | date: '%Y-%m-%d' }}">                   
+                   <h3>
+                     <a href="{{ item.url }}">
+                       {{ item.title }}
+                     </a>
+                   </h3>
+                   {{ item.content }}
+                 </article>
+               {% endfor %}       
+
+              </div>
+              
+            </div>
+        </div>
+          
+
+
+    </div>
+    </div>
+
+    {% include footer.html %}
+    {% include future_dates.html %}
+  </body>
+
+</html>
+

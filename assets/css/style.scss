@@ -1,0 +1,12 @@
+ 
+
+
+// Added by ZZ. 
+.site-title::before {
+    content: url("../../assets/images/logos/sigsam.jpg");
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    top: 35px;
+    }
+
