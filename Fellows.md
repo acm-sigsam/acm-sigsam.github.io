@@ -2,7 +2,7 @@
 layout: base
 ---
 ACM Fellows from our community
-
+------------------------------
 
 {% for fellow in site.fellows %} 
    {{fellow.fellow_name}} ({{fellow.year}})<br>
