@@ -28,7 +28,7 @@ description: > # this means to ignore newlines until "baseurl:"
  dedicated to supporting and promoting research in computer algebra, 
  symbolic computation and its applications.
 domain: acm-sigsam.github.io   
-baseurl: "/" 
+baseurl: "" 
 # url: "http://sigsam.org" # the base hostname & protocol for your site
 twitter_username: acm_sigsam
 github_username:  acm-sigsam
@@ -39,14 +39,39 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
+# include:
+#   - _pages
+
+header_pages:
+  - Conferences.md
+  - Journals.md
+  - Software.md
+  - Awards.md
+  - CCA/index.md
+  - about.md
+  - Join.md
+
+disqus:
+  shortname: acmsigsam
+
+
+minima:
+  # skin: dark
+  social_links:
+    - { platform: github,  user_url: "https://github.com/acm-sigsam" }
+    - { platform: twitter, user_url: "https://twitter.com/acm-sigsam" }
+
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 excerpt_separator: "<!--more-->"
 
 collections_dir: collections
 collections:
-  fellows: 
-    output: true
-    
+  announcements: 
+    output: true 
+    sort_by: date
   awards_issac:
     output: true
 
@@ -62,9 +87,24 @@ collections:
     output: true
     sort_by: year
   
+  awards_issac_best_student:
+    output: true
+    sort_by: year
+  
+  conferences: 
+    output: true
+    sort_by: year
+  
+  fellows: 
+    output: true
+
   journals:
     output: true 
     sort_by: abbreviation
+
+  news: 
+    output: true 
+    sort_by: date
 
 
 
