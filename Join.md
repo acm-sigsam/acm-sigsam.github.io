@@ -1,6 +1,6 @@
 ---
 layout: base
-title: About
+title: Join
 ---
 
-
+ 
