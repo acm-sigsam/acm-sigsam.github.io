@@ -1,0 +1,15 @@
+---
+title: Officers
+permalink: /officers/
+---
+{%- comment -%} Lists the officers collection (_officers/), alphabetically by family name (sort_name). {%- endcomment -%}
+<p>Everyone who served on the SIGSAM Executive Committee or as a SIGSAM volunteer, as far as recorded on the previous SIGSAM website. See also the <a href="{{ '/board/' | relative_url }}">committee for each term</a>.</p>
+{% assign people = site.officers | sort: "sort_name" %}
+<div class="people-cards">
+{% for o in people %}
+  <a class="person-card" href="{{ o.url | relative_url }}">
+    {% if o.photo %}<img src="{{ o.photo | relative_url }}" alt="" loading="lazy">{% else %}<span class="no-photo" aria-hidden="true"></span>{% endif %}
+    <span><strong>{{ o.title }}</strong><span class="small">{% for r in o.roles limit: 3 %}{{ r.role }} {{ r.term }}{% unless forloop.last %}; {% endunless %}{% endfor %}{% if o.roles.size > 3 %}; …{% endif %}</span></span>
+  </a>
+{% endfor %}
+</div>

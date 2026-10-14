@@ -1,0 +1,2 @@
+{%- assign c = include.c -%}
+{%- if c.end_date and c.date_precision == "day" -%}{{ c.date | date: "%-d %b" }} – {{ c.end_date | date: "%-d %b %Y" }}{%- else -%}{% include fuzzy-date.html date=c.date precision=c.date_precision %}{%- endif -%}

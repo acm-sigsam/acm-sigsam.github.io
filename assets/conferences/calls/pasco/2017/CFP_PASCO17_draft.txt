@@ -1,0 +1,69 @@
+		 CALL FOR PAPERS PASCO 2017
+ 8th International Workshop on Parallel and Symbolic Computation
+Technical University of Kaiserslautern, Germany, July 23-24, 2017
+
+		http://sigsam.org/PASCO/2017/
+
+The International Workshop on Parallel and Symbolic Computation
+(PASCO) is a series of workshops dedicated to the promotion and
+advancement of parallel algorithms and software in all areas of
+mathematical computation. 
+
+
+IMPORTANT DATES
+
+% TO BE DECIDED (dates below are adapted from 2015)
+Abstract submission: Monday 3rd April 2017 (23:59 PST).
+Paper submission: Monday 10th April 2017 (23:59 PST).
+Notification of acceptance/rejection: Friday 26th May 2017.
+
+
+CONFERENCE TOPICS
+
+All topics covered traditionally by PASCO including:
+* Design and analysis of parallel algorithms for computer algebra
+* Practical parallel implementation of symbolic or symbolic-numeric
+    algorithms 
+* Design of high-performance algebraic packages and systems
+* Data representation and distributed data-structures
+* Considerations for modern hardware and hardware acceleration
+    technologies (multi-cores, GPUs, FPGAs) 
+* Parallel algorithm implementation and performance tuning
+* Cache complexity and cache-oblivious algorithms for computer algebra
+* Compile-time and run-time techniques for automating optimization
+    and platform adaptation of computer algebra algorithms
+* Applications of high-performance computer algebra
+
+PASCO 2017 is affiliated with and immediately precedes the 2017
+International Symposium on Symbolic and Algebraic Computation
+(ISSAC2017), also in Kaiserslautern. 
+Earlier meetings in the PASCO series (originally called Computer
+Algebra and Parallelism) include CAP'88 (Grenoble, France), CAP'90
+(Ithaca, USA), PASCO'94 (Linz, Austria), PASCO'97 (Maui, U.S.A.),
+PASCO'07 (London, Canada), PASCO'10 (Grenoble, France) and PASCO'15 (Bath, UK).  
+
+
+SUBMISSION INSTRUCTIONS
+
+Papers must contain original research and not duplicate work published
+or submitted for publication elsewhere. Papers will be reviewed by the
+Program Committee and external referees. Proceedings will be
+distributed at PASCO 2017. Papers must be written in English and
+should not exceed 8 pages in ACM's Proceedings style
+https://www.acm.org/publications/article-templates/proceedings-template.html/, which is
+about 20 to 22 pages in LaTeX 12pt article style.
+
+% TO BE DECIDED and SETUP
+Papers are exclusively submitted via:
+
+       https://easychair.org/conferences/?conf=pasco2017 
+
+We expect that at least one author of each accepted paper attends
+PASCO 2017 and presents her or his paper. Accepted papers should then be
+published in the form of formal proceedings in the ACM Digital Library
+(application pending). 
+
+
+REPEATING DATES
+
+Submit by Apr. 10 (23:59 PST); Notif. by May 26; Conf. Jul. 23-24, 2017.

@@ -1,0 +1,20 @@
+---
+title: SIGSAM Journal Guide
+permalink: /journals/
+---
+{%- comment -%} Based on website/Resources/Journals.html; entries come from the journals collection (_journals/). {%- endcomment -%}
+<p>Research in Computer Algebra, Symbolic Computation, and its applications is found in a number of scientific journals. We have developed the following list of those that regularly publish articles in the discipline. If you have any corrections or additions for the list please contact <a href="mailto:Infodir_SIGSAM@acm.org">the Information Director</a> on <a href="mailto:Infodir_SIGSAM@acm.org">Infodir_SIGSAM@acm.org</a>.</p>
+{% assign cats = "Journals dedicated to Computer Algebra and Symbolic Computation|Journals with a large component of Computer Algebra and Symbolic Computation|Journals publishing regularly on Computer Algebra and Symbolic Computation" | split: "|" %}
+{% for cat in cats %}
+  <h2>{{ cat }}</h2>
+  {% assign items = site.journals | where: "category", cat | sort: "position" %}
+  <div class="journal-list">
+  {% for j in items %}
+    <a class="journal-card" href="{{ j.url | relative_url }}">
+      {% if j.cover %}<img src="{{ j.cover | relative_url }}" alt="" loading="lazy">{% endif %}
+      <span><strong>{{ j.title }}{% if j.abbreviation %} ({{ j.abbreviation }}){% endif %}</strong>
+      <span class="small">{{ j.publisher }}{% if j.status %} · {{ j.status }}{% endif %}</span></span>
+    </a>
+  {% endfor %}
+  </div>
+{% endfor %}

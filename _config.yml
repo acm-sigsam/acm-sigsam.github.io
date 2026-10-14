@@ -1,130 +1,64 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-logo: assets/images/logos/sigsam.jpg
 title: ACM SIGSAM
-email: info_dir@sigsam.org
-description: > # this means to ignore newlines until "baseurl:"
- The Association for computing machinery (ACM) is the world's largest educational 
- and scientific computing society. SIGSAM is the ACM Special Interest Group 
- in Symbolic and Algebraic Manipulation. We are an international organization 
- dedicated to supporting and promoting research in computer algebra, 
- symbolic computation and its applications.
-domain: acm-sigsam.github.io   
-baseurl: "" 
-url: https://acm-sigsam.github.io/
-# url: "http://sigsam.org" # the base hostname & protocol for your site
-twitter_username: acm_sigsam
-github_username:  acm-sigsam
+description: Special Interest Group on Symbolic and Algebraic Manipulation
+url: ""        # e.g. https://www.sigsam.org once the domain points to GitHub Pages
+baseurl: ""    # e.g. /sigsam if served from a project page
+markdown: kramdown
+# Publish documents dated in the future (upcoming conferences such as ISSAC 2027).
+future: true
 
-# Build settings
-remote_theme: jekyll/minima
-plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
-
-# include:
-#   - _pages
-
-header_pages:
-  - Conferences.md
-  - Journals.md
-  - Software.md
-  - Awards.md
-  - CCA/index.md
-  - about.md
-  - Join.md
-
-disqus:
-  shortname: acmsigsam
-
-
-minima:
-  # skin: dark
-  social_links:
-    - { platform: github,  user_url: "https://github.com/acm-sigsam" }
-    - { platform: twitter, user_url: "https://twitter.com/acm-sigsam" }
-
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-
-excerpt_separator: "<!--more-->"
-
-collections_dir: collections
+# Collections live in _awards/, _news/, _conferences/, _software/, _books/, _journals/, _officers/ and _board/ (Jekyll requires the underscore).
+# Awards are grouped in one subfolder per award type, e.g. _awards/jenks-prize/2021-cohen.md;
+# conferences in one subfolder per series, e.g. _conferences/issac/2024.md.
 collections:
-  announcements: 
-    output: true 
-    sort_by: date
-  awards_issac:
+  awards:
     output: true
-
-  awards_jenks:
-    output: true    
-    sort_by: year
-
-  awards_jenks_calls:
+    permalink: /awards/:path/
+  news:
     output: true
-    sort_by: year
-
-  awards_issac_best_paper:
+    permalink: /news/:year/:month/:day/:title/
+  conferences:
     output: true
-    sort_by: year
-  
-  awards_issac_best_student:
+    permalink: /conferences/:path/
+  software:
     output: true
-    sort_by: year
-  
-  conferences: 
+    permalink: /software/:name/
+  books:
     output: true
-    sort_by: year
-  
-  fellows: 
-    output: true
-
+    permalink: /books/:name/
   journals:
-    output: true 
-    sort_by: abbreviation
+    output: true
+    permalink: /journals/:name/
+  officers:
+    output: true
+    permalink: /officers/:name/
+  board:
+    output: true
+    permalink: /board/:name/
 
-  news: 
-    output: true 
-    sort_by: date
+defaults:
+  - scope: { path: "", type: awards }
+    values: { layout: award }
+  - scope: { path: "", type: news }
+    values: { layout: news }
+  - scope: { path: "", type: conferences }
+    values: { layout: conference }
+  - scope: { path: "", type: software }
+    values: { layout: software }
+  - scope: { path: "", type: books }
+    values: { layout: book }
+  - scope: { path: "", type: journals }
+    values: { layout: journal }
+  - scope: { path: "", type: officers }
+    values: { layout: officer }
+  - scope: { path: "", type: board }
+    values: { layout: board }
+  - scope: { path: "" }
+    values: { layout: page }
 
+# Number of items in the news column.
+news_column_items: 6
 
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

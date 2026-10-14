@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<article class="award">
+  {% assign t = site.data.award_types | where: "type", page.type | first %}
+  <p class="kicker"><a href="{{ '/awards/' | relative_url }}">Awards</a> · <a href="{{ '/awards/' | append: t.id | append: '/' | relative_url }}">{{ page.type }}</a></p>
+  <h1>{{ page.title }}</h1>
+  <dl class="facts">
+    {% if page.recipients %}<dt>Awarded to</dt><dd>{{ page.recipients | array_to_sentence_string }}</dd>{% endif %}
+    {% if page.coauthors %}<dt>With</dt><dd>{{ page.coauthors | array_to_sentence_string }}</dd>{% endif %}
+    {% if page.paper %}<dt>Paper</dt><dd>{% if page.doi %}<a href="{{ page.doi }}">{{ page.paper }}</a>{% else %}{{ page.paper }}{% endif %}</dd>{% endif %}
+    {% if page.for %}<dt>For</dt><dd>{{ page.for }}</dd>{% endif %}
+    <dt>Date</dt><dd>{% include fuzzy-date.html date=page.date precision=page.date_precision %}</dd>
+    {% if page.venue %}<dt>Venue</dt><dd>{{ page.venue }}</dd>{% endif %}
+    {% if page.link %}<dt>More</dt><dd><a href="{{ page.link }}">ACM citation</a></dd>{% endif %}
+  </dl>
+  {% if page.pictures.size > 0 %}
+    <div class="gallery">
+      {% for p in page.pictures %}
+        <figure>
+          <a href="{{ p.file | relative_url }}"><img src="{{ p.file | relative_url }}" alt="{{ p.caption | default: page.title | escape }}" loading="lazy"></a>
+          {% if p.caption %}<figcaption>{{ p.caption }}</figcaption>{% endif %}
+        </figure>
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if page.citation %}
+    <h2>Citation</h2>
+    {%- comment -%} The citation exactly as on the previous site (one list item per paragraph), shown as plain text. {%- endcomment -%}
+    <div class="citation">{% for para in page.citation %}<p>{{ para | escape }}</p>{% endfor %}</div>
+  {% endif %}
+  {{ content }}
+  {% if page.reference %}<p class="small">{{ page.reference | escape }}</p>{% endif %}
+</article>

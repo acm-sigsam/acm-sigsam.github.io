@@ -1,0 +1,41 @@
+---
+title: Books
+permalink: /books/
+---
+{%- comment -%} Based on website/Resources/Books.html; the list comes from the books collection (_books/), built from website/Resources/BookList.html. {%- endcomment -%}
+<p>SIGSAM maintains a list of books on computer algebra and symbolic computation. While no such list is ever complete, it is probably the most extensive on the subject. We welcome additions and extensions: please contact <a href="mailto:Infodir_SIGSAM@acm.org">the Information Director</a> on <a href="mailto:Infodir_SIGSAM@acm.org">Infodir_SIGSAM@acm.org</a>.</p>
+
+<div class="covers">
+  {% for f in site.static_files %}{% if f.path contains "/assets/pictures/books/Book-" %}
+    <img src="{{ f.path | relative_url }}" alt="Book cover" loading="lazy">
+  {% endif %}{% endfor %}
+</div>
+
+
+{% assign added = site.books | where_exp: "b", "b.added" | sort: "year" | reverse %}
+{% if added.size > 0 %}
+<h2 id="since-2007">Books since 2007</h2>
+{% assign ygroups = added | group_by: "year" %}
+{% for g in ygroups %}
+  <h3 id="p{{ g.name }}">{{ g.name }}</h3>
+  <ul class="book-list">
+    {% assign items = g.items | sort: "title" %}
+    {% for b in items %}
+      <li><a href="{{ b.url | relative_url }}">{{ b.citation }}</a> <a class="small" href="{{ b.link }}">publisher</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+<h2 id="list-2008">The SIGSAM book list (to 2008)</h2>
+{% endif %}
+
+{% assign listed = site.books | where_exp: "b", "b.list_year" %}
+{% assign groups = listed | group_by: "list_year" | sort: "name" | reverse %}
+{% for g in groups %}
+  <h3 id="y{{ g.name }}">{{ g.name }}</h3>
+  <ol class="book-list">
+    {% assign items = g.items | sort: "list_number" %}
+    {% for b in items %}
+      <li><a href="{{ b.url | relative_url }}">{{ b.citation }}</a></li>
+    {% endfor %}
+  </ol>
+{% endfor %}

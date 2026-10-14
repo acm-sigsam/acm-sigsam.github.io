@@ -1,0 +1,9 @@
+<nav class="side-box award-menu" aria-labelledby="award-menu-title">
+  <h2 id="award-menu-title"><a href="{{ '/awards/' | relative_url }}">Awards</a></h2>
+  <ul>
+    {% for t in site.data.award_types %}
+      {% capture prefix %}/awards/{{ t.id }}/{% endcapture %}
+      <li><a href="{{ prefix | relative_url }}"{% if page.url contains prefix %} aria-current="page"{% endif %}>{{ t.short }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

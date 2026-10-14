@@ -1,0 +1,56 @@
+CALL FOR PARTICIPATION
+
+#############################################
+East Coast Computer Algebra Day 2017
+April 29 2017
+Wolfram Research in Champaign, Illinois, USA
+https://www.sigsam.org/ECCAD/2017/
+#############################################
+
+The East Coast Computer Algebra Day (ECCAD) is an annual one-day meeting for those interested in computer algebra and symbolic mathematical computation. It provides opportunities to learn and to share new results and current work in progress. The schedule includes prominent invited speakers along with contributed posters. Plenty of time is allowed for unstructured interaction among the participants. Researchers, teachers, students, and users of computer algebra are all welcome.   ECCAD-2017 will be hosted by Wolfram Research on Saturday, April 29, 2017
+
+
+####################
+INVITED SPEAKERS
+####################
+
+John P. D'Angelo (University of Illinois, USA)
+James H. Davenport (University of Bath, U.K.)
+Bruce Reznick (University of Illinois, USA)
+Ekaterina Shemyakova (SUNY, USA)
+Dan Steffy (Oakland University, USA)
+
+ 
+####################
+POSTER SESSION
+####################
+
+As in past years, we will schedule ample time for poster presentations. If you wish to present a poster please email the Local Organizer (address found below). All posters will be reviewed by the ECCAD 2017 Poster Committee. A decision on acceptance will be made within 10 days of receipt of each submission.  Please restrict final poster size to 1 meter in either direction.
+
+
+####################
+REGISTRATION
+####################
+
+Registration is free for this event.  To register please complete the Eventbrite form at the following URL or email the local organizer:
+https://www.eventbrite.com/e/eccad-2017-tickets-32591687615">https://www.eventbrite.com/e/eccad-2017-tickets-32591687615
+
+Please see the event webpage (https://www.sigsam.org/ECCAD/2017/) for details on travel and accommodation.  We hope to see you in Champaign!
+
+
+####################
+CONTACT
+####################
+
+Local Organiser: Daniel Lichtblau (Wolfram Research, U.S.A.) 
+danl@wolfram.com
+
+Publicity Chair: Matthew England (Coventry University, U.K.)
+Matthew.England@coventry.ac.uk
+
+
+####################
+Sponsors
+####################
+
+ECCAD 2017 is supported by SIGSAM, and the Werner Krandick ECCAD fund (if you would like to make a contribution to this, please contact Jeremy Johnson at jjohnson@cs.drexel.edu).

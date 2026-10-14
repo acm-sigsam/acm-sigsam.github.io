@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{%- comment -%}
+  One person who served SIGSAM. Front matter: title (name), photo, position, affiliation, website
+  (from their most recent term), roles [{role, group, board (id of the _board term), term}], sources.
+{%- endcomment -%}
+<article class="officer">
+  <p class="kicker"><a href="{{ '/board/' | relative_url }}">Executive Committee</a></p>
+  <div class="person-head">
+    {% if page.photo %}<img class="person-photo" src="{{ page.photo | relative_url }}" alt="{{ page.title }}">{% endif %}
+    <div>
+      <h1>{{ page.title }}</h1>
+      {% if page.position or page.affiliation %}<p class="lead">{{ page.position }}{% if page.position and page.affiliation %}, {% endif %}{{ page.affiliation }}</p>{% endif %}
+      {% if page.website %}<p><a href="{{ page.website }}">Personal website</a></p>{% endif %}
+    </div>
+  </div>
+  <h2>Roles</h2>
+  <table>
+    <thead><tr><th>Term</th><th>Role</th></tr></thead>
+    <tbody>
+    {% for r in page.roles %}
+      <tr><td><a href="{{ '/board/' | append: r.board | append: '/' | relative_url }}">{{ r.term }}</a></td><td>{{ r.role }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {{ content }}
+</article>

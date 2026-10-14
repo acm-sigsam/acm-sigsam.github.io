@@ -1,0 +1,17 @@
+{%- comment -%} Home-page banner with the upcoming conferences (hidden when there are none). {%- endcomment -%}
+{% include upcoming.html %}
+{% if upcoming.size > 0 %}
+<section class="upcoming-banner" aria-labelledby="upcoming-banner-title">
+  <h2 id="upcoming-banner-title">Upcoming conferences</h2>
+  <div class="upcoming-cards">
+    {% for c in upcoming limit: 6 %}
+      <a class="upcoming-card" href="{{ c.url | relative_url }}">
+        <span class="when">{% include conference-dates.html c=c %}</span>
+        <strong>{{ c.title }}</strong>
+        {% if c.location %}<span class="where">{{ c.location }}</span>{% endif %}
+      </a>
+    {% endfor %}
+  </div>
+  <p class="more"><a href="{{ '/conferences/' | relative_url }}">All conferences »</a></p>
+</section>
+{% endif %}

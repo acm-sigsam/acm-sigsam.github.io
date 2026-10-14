@@ -1,0 +1,17 @@
+# Top navigation (header menu).
+- title: Awards
+  url: /awards/
+- title: CCA
+  url: /cca/
+- title: Conferences
+  url: /conferences/
+- title: Books
+  url: /books/
+- title: Journals
+  url: /journals/
+- title: Software
+  url: /software/
+- title: News
+  url: /news/
+- title: Join
+  url: /join/

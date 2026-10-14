@@ -1,0 +1,33 @@
+---
+title: "2017 Jenks Prize: Wolfram|Alpha and Mathematica"
+type: "Richard D. Jenks Memorial Prize"
+date: 2018-07-18
+date_precision: "day"
+venue: "ISSAC 2018 banquet, New York"
+year: 2017
+recipients:
+  - "Stephen Wolfram"
+for: "Wolfram|Alpha and Mathematica"
+sources:
+  - "website/awards/jenks/awardees/2017/index.html"
+  - "website/awards/jenks/awardees/index.html"
+  - "website/News/2017.html"
+  - "website/News/2018.html"
+pictures:
+  - {"file": "/assets/pictures/awards/jenks-prize/2017-presentation.jpg", "caption": "Image of the 2017 Jenks Prize Winner Receiving Award", "source": "website/awards/jenks/awardees/2017/Presentation.jpg"}
+  - {"file": "/assets/pictures/awards/jenks-prize/2017-stephenwolfram.jpg", "caption": null, "source": "website/awards/jenks/awardees/2017/StephenWolfram.jpg"}
+---
+
+The 2017 Richard D. Jenks Memorial Prize for Excellence in Software Engineering Applied to Computer Algebra has been awarded to Stephen Wolfram for Wolfram\|Alpha and Mathematica.
+
+Stephen Wolfram has worked continuously on a symbolic computation software stack for over 30 years, and remains an innovator in the field to this day. This is notable for the Jenks Memorial Prize because quite possibly Richard Jenks was the only other person to work on such a project for 30 years.
+
+The tightly integrated Wolfram technology stack, as it existed in 2006, is what paved the way for the development of the computation/knowledge engine that is Wolfram\|Alpha. In deployment now for nearly a decade, it remains the world's first, largest, and most-used web and mobile symbolic computation engine, and it has made the tandem of symbolic computation and curated knowledge freely available to the world. In many respects it has helped to define new directions for the field: consider, for example, how little use was made of curated data or geographic computation in this field prior to the launch of Wolfram\|Alpha.
+
+Counting earlier work on the predecessor program SMP, Stephen Wolfram embodies a career-long dedication to the creation, design and deployment of both the Wolfram Language and Wolfram\|Alpha.
+
+The plaque was awarded to Stephen Wolfram in person during the banquet of the 2018 ISSAC in New York.
+
+The Prize Selection Committee consisted of Chris Brown, Mark Giesbrecht, Gert-Martin Greuel, Erich Kaltofen (Chair) and Robert Sutor.
+
+From left to right: Christopher Brown (SIGSAM Chair and Prize Committee Member), Stephen Wolfram, Erich Kaltofen (Prize Committee Chair), and Mark Giesbrecht (Prize Committee Member), July 18, 2018

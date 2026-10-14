@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{%- comment -%}
+  One computer algebra system / package. Front matter: title, page_title, category, listed, position,
+  summary, vendor {name, url}, website, previous_website, repo, link (website, else repo), status, status_notes, link_sources, contact,
+  citation_note, citation (BibTeX), sources.
+{%- endcomment -%}
+<article class="software">
+  <p class="kicker"><a href="{{ '/software/' | relative_url }}">Software</a>{% if page.category %} · {{ page.category }}{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}<p class="lead">{{ page.summary }}</p>{% endif %}
+  {% if page.link or page.contact or page.vendor %}
+  <dl class="facts">
+    {% if page.vendor %}<dt>Vendor</dt><dd><a href="{{ page.vendor.url }}">{{ page.vendor.name }}</a></dd>{% endif %}
+    {%- comment -%} Main link: the web page, or the repository when there is no web page; the repository is always shown. {%- endcomment -%}
+    {% if page.link %}<dt>{% if page.website %}Website{% else %}Repository{% endif %}</dt><dd><a href="{{ page.link }}">{{ page.link }}</a></dd>{% endif %}
+    {% if page.website and page.repo and page.repo != page.website %}<dt>Repository</dt><dd><a href="{{ page.repo }}">{{ page.repo }}</a></dd>{% endif %}
+    {% if page.status == "discontinued" %}<dt>Status</dt><dd>Discontinued</dd>{% endif %}
+    {% if page.contact %}<dt>Contact</dt><dd>{{ page.contact }}</dd>{% endif %}
+  </dl>
+  {% endif %}
+  {{ content }}
+  {% if page.citation %}
+    <h2>Citation</h2>
+    {% if page.citation_note %}{% assign cn = page.citation_note | slice: 0, 4 %}<p class="small">{% if cn == "http" %}See also <a href="{{ page.citation_note }}">{{ page.citation_note }}</a>{% else %}{{ page.citation_note }}{% endif %}</p>{% endif %}
+    <pre><code>{{ page.citation | escape }}</code></pre>
+  {% endif %}
+  {% unless page.listed %}<p class="small">This system had a page on the previous SIGSAM website but was not on its software list.</p>{% endunless %}
+</article>

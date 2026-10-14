@@ -1,0 +1,650 @@
+# Conference series, in the order of the series guide of the previous site (website/Resources/ConferenceSeries.html).
+# `id` is the subfolder of _conferences/ and the URL /conferences/<id>/.
+- id: issac
+  short: ISSAC
+  name: International Symposium on Symbolic and Algebraic Computation
+  status: active
+  webpage: http://www.issac-conference.org
+  description:
+  - ISSAC is the premier annual conference for new research in symbolic mathematical computation. It is regularly sponsored by SIGSAM.
+  - 'Series webpage: http://www.issac-conference.org'
+  - Full papers are submitted in advance of the meeting for consideration, with the Proceedings published by the ACM. The official ACM archive (1989--present) can be found here. In addition, there are tracks for software demonstrations and posters, both of which are accompanied by extended abstracts published in CCA.
+  source: website/Resources/ConferenceSeries.html
+  steering_committee:
+  - name: Chenqi Mou
+    role: Member at Large, chair
+    affiliation: null
+    term: 2025-2028
+  - name: Christoph Koutschan
+    role: Member at Large
+    affiliation: null
+    term: 2026-2029
+  - name: Wen-shin Lee
+    role: Member at Large
+    affiliation: null
+    term: 2024-2027
+  - name: Shaoshi Chen
+    role: Organizational member, for Chinese Association for Computer Mathematics
+    affiliation: null
+    term: since 2025
+  - name: Tommy Hofmann
+    role: Organizational member, for Fachgruppe CA
+    affiliation: null
+    term: since 2025
+  - name: Dan Roche
+    role: Organizational member, for SIGSAM
+    affiliation: null
+    term: since 2025
+  steering_committee_as_of: ISSAC website, last updated 16 April 2025
+  other_lists:
+  - title: Steering committee (previous SIGSAM website)
+    items:
+    - Xiao-Shan Gao (Member-at-large), 2006-2009
+    - André Galligo (Member-at-large), 2007-2010
+    - Michael Monagan (Member-at-large), 2008-2011
+    - Elkedagmar Heinrich (Organizational member, representing Fachgruppe Computeralgebra (Germany); organization up for renewal in 2009), 2008 - 2011
+    - Yosuke Sato (Organizational member, representing Japanese Society for Symbolic and Algebraic Computation (JSSAC); organization up for renewal in 2010), 2007-2010
+    - Daniel Lichtblau (Organizational member, representing SIGSAM; organization up for renewal in 2010), 2007-2010
+  - title: ISSAC Steering Committee as listed in steering-committee.html (last modified 3 August 2007)
+    items:
+    - name: Jeremy Johnson
+      role: Member-at-large
+      term: 2005-2008
+    - name: Xiao-Shan Gao
+      role: Member-at-large
+      term: 2006-2009
+    - name: André Galligo
+      role: Member-at-large
+      term: 2007-2010
+    - name: Gerhard Hiss
+      role: Organizational member, representing Fachgruppe Computeralgebra (Germany); organization up for renewal in 2009
+      term: 2006-2009
+    - name: Yosuke Sato
+      role: Organizational member, representing Japanese Society for Symbolic and Algebraic Computation (JSSAC); organization up for renewal in 2010
+      term: 2007-2010
+    - name: Daniel Lichtblau
+      role: Organizational member, representing SIGSAM; organization up for renewal in 2010
+      term: 2007-2010
+    - name: Mark Giesbrecht (chair)
+      role: Member-at-large (row commented out in the HTML)
+      term: 2004-2007
+  - title: Initial Steering Committee composition (Bylaws, 'Transition from Current Status')
+    items:
+    - The Steering Committee begins work on July 12, 1995.
+    - 'Organizational members with given terms: the SIGSAM chair (3 years), the Speaker of the Fachgruppe for Computer Algebra (2 years), and Hidetsune Kobayashi (1 year).'
+    - At the ISSAC'95 business meeting three members-at-large (one, two or three year terms, by lottery) to be elected from Manuel Bronstein, Arjeh M. Cohen, Marc Giusti, Teo Mora, Tomas Recio, and those present who wish to be considered.
+    - The Steering Committee honors all decisions already made in regard to ISSAC'96, ISSAC'97, and ISSAC'98.
+  - title: ISSAC Invited Talks Videos (videos.html, last modified 15 July 2005)
+    items:
+    - meeting: ISSAC 2004
+      speakers:
+      - Pablo Parrilo
+      - Francisco Santos
+      - Jan Verschelde
+    - meeting: ISSAC 2003
+      speakers:
+      - Michael Barnett
+      - Erich Kaltofen
+      - Reinhard Laubenbacher
+  - title: Bid for ISSAC 2007 (Documents/ISSAC_2007_FCRC_Bid.pdf)
+    items:
+    - meeting: ISSAC 2007
+      location: San Diego, California
+      dates: June 9-16, 2007
+      venue: San Diego Town and Country Resort
+      note: Bid to hold ISSAC 2007 as part of the Federated Computing Research Conference (FCRC), http://www.acm.org/fcrc; the dates are those of FCRC.
+  notes:
+  - 'steering-committee.phtml (the page linked from index.phtml) has no date; it is used for steering_committee. steering-committee.html is an older version (last modified 3 August 2007); differences: Jeremy Johnson (2005-2008) and Gerhard Hiss (Fachgruppe, 2006-2009) in the older page are replaced by Michael Monagan (2008-2011) and Elkedagmar Heinrich (Fachgruppe, 2008 - 2011) in the newer page.'
+  - 'Members fall into two categories: Members-at-Large, elected for three years, and Organizational Members. No affiliations are given; e-mail addresses are given but omitted here.'
+  - No current chair is marked in steering-committee.phtml; in steering-committee.html Mark Giesbrecht is marked '(chair)' in a commented-out row.
+  - 'Bylaws (last modified 25 November 2002): committee of three organizational members (elected chairs of well-established organizations) and three members-at-large, three-year terms; chair chosen every year by the six members.'
+  - 'index.phtml: the series dates back to 1966, with ISSAC 96 being the 21st meeting; the name ''ISSAC'' was first used for the 1988 meeting, when the European EUROSAM/EUROCAL/EUROCAM conferences were merged with the North American SYMSAM/SYMSAC stream; the majority of meetings have been sponsored by ACM SIGSAM.'
+  - 'index.phtml: the ISSAC community voted to adopt the bylaws at the Montreal meeting.'
+  - index.phtml includes the list of ISSAC conferences (1988 - present) from ../conferences/issac-list.html, which was outside the assigned paths and was not read.
+  - website/conferences/index.phtml is only a redirect to http://www.sigsam.org/Resources/ConferenceSeries.html.
+  - index.php only redirects to index.phtml.
+  - Documents/ISSAC_2006_Genoa_draft3.xls is a binary spreadsheet and was not read.
+  sources:
+  - website/Resources/ConferenceSeries.html
+  - website/issac/steering-committee.phtml
+  - website/issac/steering-committee.html
+  - website/issac/index.phtml
+  - website/issac/index.php
+  - website/issac/bylaws.html
+  - website/issac/bylaws.phtml
+  - website/issac/videos.html
+  - website/issac/Documents/ISSAC_2007_FCRC_Bid.pdf
+  - website/conferences/index.phtml
+  - https://www.issac-conference.org/
+  main: 1
+- id: aca
+  short: ACA
+  name: Conference on Applications of Computer Algebra
+  status: active
+  webpage: http://www.math.unm.edu/~aca/
+  description:
+  - ACA meetings are organised as a collection of special sessions on specific topics of interest, which solicit contributions individually.
+  - 'Series webpage: "http://www.math.unm.edu/~aca/'
+  - Usually, extended abstracts are prepared before the meeting with an associated journal special issue for full papers afterwards.
+  source: website/Resources/ConferenceSeries.html
+  main: 4
+- id: adg
+  short: ADG
+  name: International Workshop on Automated Deduction in Geometry
+  status: active
+  webpage: null
+  description:
+  - ADG concerns research at the intersection between geometry and automated deduction, including symbolic computation.
+  - The workshop is held every two years. Extended abstracts are prepared in advance for consideration, and full papers are submitted afterwards for the post proceedings, published as a volume of Springer Lecture Notes in Computer Science.
+  source: website/Resources/ConferenceSeries.html
+- id: aisc
+  short: AISC
+  name: Artificial Intelligence and Symbolic Computation
+  status: inactive
+  webpage: null
+  description:
+  - This conference series is concerned with AI research that makes use of symbolic computation.
+  - Papers are submitted in advance of the meeting for consideration, with the Proceedings published as a volume of Springer Lecture Notes in Artificial Intelligence.
+  source: website/Resources/ConferenceSeries.html
+- id: ascm
+  short: ASCM
+  name: Asian Symposium on Computer Mathematics
+  status: inactive
+  webpage: http://www.mmrc.iss.ac.cn/ascm/
+  description:
+  - This series of conferences covers any research on the topic of doing mathematics using computers, including computer algebra.
+  - 'Series website: http://www.mmrc.iss.ac.cn/ascm/'
+  source: website/Resources/ConferenceSeries.html
+- id: cai
+  short: CAI
+  name: International Conference on Algebraic Infomatics
+  status: active
+  webpage: null
+  description:
+  - The CAI conference is held every two years and is at the intersection of theoretical computer science, algebra. Topics covered include automata theory, algebraic aspects of cryptography and coding theory, computational number theory, formal power series, and term rewriting, and quantum computing.
+  source: website/Resources/ConferenceSeries.html
+- id: casa
+  short: CASA
+  name: International workshop on Computer Algebra Systems and their Applications
+  status: inactive
+  webpage: null
+  description:
+  - The CASA workshop is usually held within the annual International Conference on Computational Science.
+  source: website/Resources/ConferenceSeries.html
+- id: casc
+  short: CASC
+  name: International Workshop on Computer Algebra in Scientific Computing
+  status: active
+  webpage: http://wwwmayr.in.tum.de/leabib/proceedings/JavaWraper.php?cmd=list&proceedings=CASC
+  description:
+  - CASC focuses on the impact of computer algebra in the field of scientific computation and its applications in the natural sciences and enginnering.
+  - This webpage acts as a home for the series.
+  - Full papers are submitted in advance of the meeting for consideration, with the Proceedings published as a volume of Springer Lecture Notes in Computer Science.
+  source: website/Resources/ConferenceSeries.html
+  main: 5
+- id: cicm
+  short: CICM
+  name: Conferences on Intelligent Computer Mathematics
+  status: active
+  webpage: http://www.cicm-conference.org
+  description:
+  - CICM examines the synergies between computer algebra, automated deduction, mathematical publishing and novel user interfaces.
+  - 'Series webpage: http://www.cicm-conference.org'
+  - Full papers are submitted in advance of the meeting for consideration, with the Proceedings published as a volume of Springer Lecture Notes in Artificial Intelligence.
+  - 'Digital Mathematical Libraries: a forum for the development of math-aware technologies, standards, algorithms and formats towards a global digital mathematical library.'
+  - 'Systems and Data: A forum to publish digital resources whose value cannot be adequately represented by a printed paper alone.'
+  source: website/Resources/ConferenceSeries.html
+- id: calculemus
+  short: Calculemus
+  name: Calculemus
+  status: active
+  parent: cicm
+  webpage: null
+  description:
+  - 'Calculemus: dedicated to the integration of computer algebra systems with systems for mechanized reasoning such as interactive proof assistants and automated theorem provers. Calculemus Website'
+  source: website/Resources/ConferenceSeries.html
+- id: mkm
+  short: MKM
+  name: MKM
+  status: active
+  parent: cicm
+  webpage: null
+  description:
+  - 'Mathematical Knowledge Management: the aim here is to develop new and better ways of managing sophisticated mathematical knowledge, based on innovative technology of computer science, the Internet, and intelligent knowledge processing. MKM Website'
+  source: website/Resources/ConferenceSeries.html
+- id: eaca
+  short: EACA
+  name: Meetings on Computer Algebra and Applications
+  status: active
+  webpage: null
+  description:
+  - This Spanish series of meetings Encuentros de Algebra Computacional y Aplicaciones covers research in the fields of Computer Algebra and Symbolic Computation. It is usually held every two years, with extended abstracts submitted before the meetings.
+  source: website/Resources/ConferenceSeries.html
+- id: eccad
+  short: ECCAD
+  name: The East Coast Computer Algebra Day
+  status: inactive
+  webpage: http://www.sigsam.org/ECCAD/
+  description:
+  - This annual event on the East Coast of the USA is a one day meeting for all those interested in computer algebra and symbolic computation. It usually consists of invited speakers and poster presentations.
+  - 'Series webpage: http://www.sigsam.org/ECCAD/'
+  source: website/Resources/ConferenceSeries.html
+  steering_committee:
+  - name: Silvana Ilie
+    affiliation: Ryerson University
+    role: ECCAD 2015 organiser
+    term: null
+  - name: Arne Storjohann
+    affiliation: University of Waterloo
+    role: ECCAD 2015 organiser
+    term: null
+  - name: Daniel Lichtblau
+    affiliation: Wolfram Research
+    role: ECCAD 2017 organiser
+    term: null
+  - name: Ilias Kotsireas
+    affiliation: Wilfrid Laurier University
+    role: SIGSAM Chair
+    term: null
+  - name: Mark Giesbrecht
+    affiliation: University of Waterloo
+    role: Community Member 2017-18
+    term: null
+  - name: Jeremy Johnson
+    affiliation: Drexel University
+    role: Community Member 2017-19
+    term: null
+  steering_committee_as_of: ECCAD Steering Committee (2018)
+  other_lists:
+  - title: ECCAD Steering Committee (2017)
+    items:
+    - name: Xiaobai Sun
+      affiliation: Duke University
+      role: ECCAD 2014 organiser
+    - name: Silvana Ilie
+      affiliation: Ryerson University
+      role: ECCAD 2015 organiser
+    - name: Arne Storjohann
+      affiliation: University of Waterloo
+      role: ECCAD 2015 organiser
+    - name: Ilias Kotsireas
+      affiliation: Wilfrid Laurier University
+      role: SIGSAM Chair
+    - name: Mark Giesbrecht
+      affiliation: University of Waterloo
+      role: Community Member 2017-18
+    - name: Jeremy Johnson
+      affiliation: Drexel University
+      role: Community Member 2017-19
+  - title: ECCAD Steering Committee (2018)
+    items:
+    - name: Silvana Ilie
+      affiliation: Ryerson University
+      role: ECCAD 2015 organiser
+    - name: Arne Storjohann
+      affiliation: University of Waterloo
+      role: ECCAD 2015 organiser
+    - name: Daniel Lichtblau
+      affiliation: Wolfram Research
+      role: ECCAD 2017 organiser
+    - name: Ilias Kotsireas
+      affiliation: Wilfrid Laurier University
+      role: SIGSAM Chair
+    - name: Mark Giesbrecht
+      affiliation: University of Waterloo
+      role: Community Member 2017-18
+    - name: Jeremy Johnson
+      affiliation: Drexel University
+      role: Community Member 2017-19
+  - title: Previous ECCADs (index page) and Next ECCAD
+    items:
+    - meeting: ECCAD '94
+      year: 1994
+      index_page_text: The First ECCAD, Drexel University Philadelphia, PA, USA.
+      website: null
+    - meeting: ECCAD '95
+      year: 1995
+      index_page_text: University of Delaware, Newark, DE, USA
+      website: http://www.eecis.udel.edu/~saunders/eccad/schedule
+    - meeting: ECCAD '96
+      year: 1996
+      index_page_text: IBM Watson Research Center, Yorktown Heights, NY, USA
+      website: null
+    - meeting: ECCAD '97
+      year: 1997
+      index_page_text: Northwestern University, Boston, MA, USA
+      website: http://www.ccs.neu.edu/home/gene/eccad97.html
+    - meeting: ECCAD '98
+      year: 1998
+      index_page_text: Naval Academy, Annapolis. MD, USA
+      website: null
+    - meeting: ECCAD '99
+      year: 1999
+      index_page_text: NCSU, Raleigh, NC, USA
+      website: null
+    - meeting: ECCAD '00
+      year: 2000
+      index_page_text: University of Western Ontario, London, ON, Canada
+      website: http://www.orcca.on.ca/eccad2000/
+    - meeting: ECCAD '01
+      year: 2001
+      index_page_text: Florida State University, Tallahassee, FL, USA
+      website: http://www.math.fsu.edu/eccad01
+    - meeting: ECCAD '02
+      year: 2002
+      index_page_text: LaGuardia CC, NY, USA
+      website: null
+    - meeting: ECCAD '03
+      year: 2003
+      index_page_text: Clemson University, GA, USA
+      website: http://www.math.clemson.edu/~sgao/ECCAD03/
+    - meeting: ECCAD '04
+      year: 2004
+      index_page_text: Wilfrid Laurier University, Waterloo, ON, Canada
+      website: null
+    - meeting: ECCAD '05
+      year: 2005
+      index_page_text: Ashland University, Ashland, OH, USA
+      website: null
+    - meeting: ECCAD '06
+      year: 2006
+      index_page_text: Drexel U, Philadelphia, PA, USA
+      website: http://www.cs.drexel.edu/eccad2006/index.html
+    - meeting: ECCAD '07
+      year: 2007
+      index_page_text: Washington U, Chestertown, MD, USA
+      website: null
+    - meeting: ECCAD '08
+      year: 2008
+      index_page_text: Shepherd U.  Shepherdstown, WV, USA
+      website: http://www.shepherd.edu/eccad2008
+    - meeting: ECCAD '09
+      year: 2009
+      index_page_text: University of Rhode Island, Kingston, RI, USA
+      website: http://www.cs.uri.edu/eccad2009/
+    - meeting: ECCAD '10
+      year: 2010
+      index_page_text: May 15, 2010.  Emory University, Atlanta, GA
+      website: http://mathcs.emory.edu/eccad2010/Home.html
+    - meeting: ECCAD '11
+      year: 2011
+      index_page_text: April 9, 2011.  University of Waterloo, Waterloo, ON
+      website: http://www.cs.uwaterloo.ca/conferences/eccad2011
+    - meeting: ECCAD '12
+      year: 2012
+      index_page_text: May 12, 2012.  Oakland University, Rochester, MI
+      website: http://www.oakland.edu/math/eccad2012
+    - meeting: ECCAD '13
+      year: 2013
+      index_page_text: April 27, 2013, Naval Academy, Annapolis. MD
+      website: null
+    - meeting: ECCAD '14
+      year: 2014
+      index_page_text: April 26, 2014, Duke University, Durham, NC
+      website: http://www.cs.duke.edu/eccad2014/
+    - meeting: ECCAD '15
+      year: 2015
+      index_page_text: October 3, 2015, Toronto, ON
+      website: https://www.fields.utoronto.ca/programs/scientific/15-16/ECCAD/
+    - meeting: ECCAD'17
+      year: 2017
+      index_page_text: 29 April 2017, Champaign,IL
+      website: https://www.sigsam.org/ECCAD/2017/
+  notes:
+  - 'Index heading: ''East Coast Computer Algebra Days''; descriptive text and the 2017 site use ''East Coast Computer Algebra Day (ECCAD)'', an annual one-day meeting.'
+  - 'History page: conceived by Bruce Char, who organized the first one in 1994 at Drexel U; held on a spring Saturday on the east coast of North America, loosely any location within 2400 km of Philadelphia.'
+  - website/eccad/index.html is only a JavaScript redirect to http://www.sigsam.org/ECCAD/.
+  - Index page entries for '10-'15 include dates; '95-'09 entries give only place; per-meeting files eccad-1994.json ... eccad-2015.json hold details from the history page.
+  sources:
+  - website/Resources/ConferenceSeries.html
+  - website/ECCAD/index.html
+  - website/ECCAD/ECCADHistory.html
+  - website/eccad/index.html
+- id: felim
+  short: FELIM
+  name: Functional Equations in LIMoges
+  status: active
+  webpage: https://indico.math.cnrs.fr/event/919/page/3
+  description:
+  - Functional Equations in Limoges (FELIM 2016) is the ninth in a series of annual international gatherings for researchers in functional equations. Participantion is by 2-page abstract submitted in advance.
+  - 'Series webpage: https://indico.math.cnrs.fr/event/919/page/3'
+  source: website/Resources/ConferenceSeries.html
+- id: focm
+  short: FoCM
+  name: Foundations of Computational Mathematics Conference
+  status: active
+  webpage: null
+  description:
+  - FoCM conferences are held every three years and cover the entire spectrum of mathematical computation. They consist of plenary invited lecturesand and theme-centered parallel workshops who organise their own speakers.
+  - The meetings are run by the FoCM Society whose website gives more information.
+  source: website/Resources/ConferenceSeries.html
+- id: icms
+  short: ICMS
+  name: International Congress on Mathematical Software
+  status: active
+  webpage: null
+  description:
+  - ICMS is dedicated to mathematical software, including computer algebra systems. It was previously held every 4 years as a satellite conference to the International Congress of Mathematicians (ICM). It now runs every 2 years to be alternately alongside ICM and the European Congress of Mathematics (ECM).
+  - Participation is by extended abstract prepared in advance of the meeting submitted to themed session organisers.
+  source: website/Resources/ConferenceSeries.html
+- id: macis
+  short: MACIS
+  name: Mathematical Aspects of Computer and Information Sciences
+  status: inactive
+  webpage: null
+  description:
+  - MACIS is a series of conferences for foundational research on theoretical and practical problems of mathematics for computing and information processing.
+  - Presenters are chosen by submission of papers or extended abstracts in advance. They are then invited to submit full papers for an associated issues of Mathematics in Computer Science after the meeting.
+  source: website/Resources/ConferenceSeries.html
+- id: mega
+  short: MEGA
+  name: Conference on Effective Methods in Algebraic Geometry
+  status: active
+  webpage: null
+  description:
+  - This conference series is devoted to computational and application aspects of Algebraic Geometry and related topics, over any characteristics. It is usually held every two years.
+  - Presenters are chosen by submission of papers or extended abstracts in advance. They are then invited to submit full papers for an associated journal special issue after the meeting.
+  source: website/Resources/ConferenceSeries.html
+  main: 3
+- id: mmcp
+  short: MMCP
+  name: Mathematical Modeling and Computational Physics
+  status: active
+  webpage: null
+  description:
+  - THis meeting alternates between Russia and Slovakia. Since the 2009 edition this conference series has included a session on computer algebra (prior to this computer algebra was represented in separate workshops).
+  - The meeting consists of invited speakers and contributed short talks, chosen by submission of 1 page abstracts in advance.
+  source: website/Resources/ConferenceSeries.html
+- id: pca
+  short: PCA
+  name: Polynomial Computer Algebra
+  status: active
+  webpage: null
+  description:
+  - This annual meeting at the The Euler International Mathematical Institute in Saint-Petersburg, Russia is devoted to polynomial algorithms in Computer Algebra. It consists of plenary talks and contributed talks, chosen by submission of extended abstract in advance.
+  source: website/Resources/ConferenceSeries.html
+- id: pasco
+  short: PASCO
+  name: International Workshop on Parallel Symbolic Computation
+  status: inactive
+  webpage: http://www.sigsam.org/PASCO/
+  description:
+  - PASCO is a workshop series dedicated to parallel algorithms and software in symbolic mathematical computation.
+  - Papers are submitted in advance and the proceedings usually published with the ACM.
+  - 'Series webpage: http://www.sigsam.org/PASCO/'
+  source: website/Resources/ConferenceSeries.html
+  steering_committee:
+  - name: Jean-Guillaume Dumas
+    affiliation: Université Grenoble Alpes, France
+    role: null
+    term: null
+  - name: Pascal Giorgi
+    affiliation: Université de Montpellier 2, France
+    role: null
+    term: null
+  - name: Hoon Hong
+    affiliation: North Carolina State University, USA
+    role: null
+    term: null
+  - name: Erich L. Kaltofen
+    affiliation: North Carolina State University, USA
+    role: null
+    term: null
+  - name: Alexander Konovalov
+    affiliation: University of St Andrews, Scotland.
+    role: null
+    term: null
+  - name: Hans-Wolfgang Loidl
+    affiliation: Heriot-Watt University, Edinburgh, Scotland.
+    role: null
+    term: null
+  - name: Michael Monagan
+    affiliation: Simon Fraser University, Canada.
+    role: null
+    term: null
+  - name: Marc Moreno Maza
+    affiliation: University of Western Ontario, Canada.
+    role: null
+    term: null
+  - name: Clément Pernet
+    affiliation: Université Grenoble Alpes, France
+    role: null
+    term: null
+  - name: Jean-Louis Roch
+    affiliation: Université Grenoble Alpes, France
+    role: null
+    term: null
+  - name: Daniel S. Roche
+    affiliation: U.S. Naval Academy, USA
+    role: null
+    term: null
+  steering_committee_as_of: July 22, 2016
+  other_lists:
+  - title: Earlier meetings in the PASCO series (originally called Computer Algebra and Parallelism), from the 2017 calls, with links from the PASCO pages
+    items:
+    - meeting: CAP'88
+      location: Grenoble, France
+      link: http://portal.acm.org/citation.cfm?id=575624
+    - meeting: CAP'90
+      location: Ithaca, USA
+      link: http://www.springer.com/computer/theoretical+computer+science/book/978-3-540-55328-1
+    - meeting: PASCO'94
+      location: Linz, Austria
+      link: http://dl.acm.org/citation.cfm?id=527796
+    - meeting: PASCO'97
+      location: Maui, U.S.A.
+      link: http://dl.acm.org/citation.cfm?id=266670
+    - meeting: PASCO'07
+      location: London, Canada
+      link: http://www.orcca.on.ca/conferences/pasco2007/site/index.html
+    - meeting: PASCO'10
+      location: Grenoble, France
+      link: http://pasco2010.imag.fr
+    - meeting: PASCO'15
+      location: Bath, UK
+      link: http://pasco2015.imag.fr
+    - meeting: PASCO 2017
+      location: Kaiserslautern, Germany
+      link: http://sigsam.org/PASCO/2017/
+    - meeting: PASCO 2018
+      location: Vancouver, Canada
+      link: http://sigsam.org/PASCO/2018/
+  notes:
+  - 'Steering committee page footer: ''Last updated, July 22, 2016.'''
+  - The PASCO home page's hidden header wrongly reads 'International Symposium on Symbolic and Algebraic Computation' (template text); its body says 'The International Workshop on Parallel Symbolic Computation (PASCO)'.
+  - Locations of the earlier meetings come from the 2017 calls; links come from the navigation menus.
+  sources:
+  - website/Resources/ConferenceSeries.html
+  - website/PASCO/committee.html
+  - website/PASCO/index.html
+  - website/PASCO/2017/CFP_PASCO17.txt
+  - website/PASCO/2018/index.html
+- id: sc2
+  short: SC²
+  name: International Workshop on Satisfiability Checking and Symbolic Computation
+  status: active
+  webpage: null
+  description:
+  - SC 2 brings together researchers from the two communities of Satisfiability Checking (who develop SAT and SMT solvers) and Symbolic Computation (who develop Computer Algebra Systems).
+  - The workshop is currently being held annually funded by the EU H2020 Project SC 2. The workshop plans to continue after the lifecycle of the project.
+  source: website/Resources/ConferenceSeries.html
+- id: scss
+  short: SCSS
+  name: International Symposium on Symbolic Computation in Software Science
+  status: active
+  webpage: http://www.risc.jku.at/conferences/scss/index.html
+  description:
+  - 'SCSS promotes research on theoretical and practical aspects of symbolic computation in software sciences. It aims for dialog between researchers in: computer algebra, algebraic geometry, algorithmic combinatorics, computational logic, and software analysis and verification. The series started out promoting collaboration between groups in Austria, Tunisia and Japan and has now grown to an international symposium.'
+  - Series Website
+  - Submission is either a Short, Regular and Tool (software) paper, with proceedings distributed at the meeting. Full papers can later be considered for special issues of the Journal of Symbolic Computation (see Volume 45, Issue 5, 2010 and Volume 69, 2015).
+  source: website/Resources/ConferenceSeries.html
+- id: siam-ag
+  short: SIAM AG
+  name: SIAM Conference on Applied Algebraic Geometry
+  status: active
+  webpage: null
+  description:
+  - SIAM:AG brings together academic and industrial researchers of algebraic geometry, including work in symbolic computation.
+  - This conference is held every two years and run by the SIAM Algebraic Geometry Activity Group.
+  - Consists of invited speakers and minisymposium which solicit contributed talks.
+  source: website/Resources/ConferenceSeries.html
+  main: 2
+- id: snc
+  short: SNC
+  name: International Workshop on Symbolic-Numeric Computing
+  status: inactive
+  webpage: http://symbolic-numeric-computation.org
+  description:
+  - SNC focusses on techniques that combine symbolic and numeric computation, the synergy between the fields and the problems they can tackle together.
+  - Papers are submitted in advance and proceedings published by the ACM.
+  - 'Series webpage: http://symbolic-numeric-computation.org'
+  source: website/Resources/ConferenceSeries.html
+- id: synasc
+  short: SYNASC
+  name: International Symposium on Symbolic and Numeric Algorithms for Scientific Computing
+  status: active
+  webpage: http://synasc.ro/
+  description:
+  - SYNASC is an annual conference which aims to stimulate interaction between the communities of symbolic and numeric computing. It takes place annually in Timisoara, Romania and is jointly organised with the Research Institute for Symbolic Computation (RISC), Austria.
+  - Papers are submitted in advance and if accepted, a revised edition is published by IEEE in post-proceedings.
+  - 'Series webpage: http://synasc.ro/'
+  source: website/Resources/ConferenceSeries.html
+- id: aaecc
+  short: AAECC
+  name: International Conference on Applied Algebra and Error-Correcting Codes
+  status: inactive
+  webpage: http://www.irit.fr/ACTIVITES/AAECC/conf.htm
+  description:
+  - This series brings together researchers in coding theory and computer algebra.
+  - 'Series webpage: http://www.irit.fr/ACTIVITES/AAECC/conf.htm'
+  source: website/Resources/ConferenceSeries.html
+- id: computers-and-mathematics
+  short: Computers and Mathematics
+  name: Computers and Mathematics
+  status: inactive
+  webpage: null
+  description: []
+  source: website/Resources/ConferenceSeries.html
+- id: macsyma
+  short: MACSYMA
+  name: MACSYMA
+  status: inactive
+  webpage: null
+  description: []
+  source: website/Resources/ConferenceSeries.html
+- id: rwca
+  short: RWCA
+  name: The Rhine Workshop on Computer Algebra
+  status: inactive
+  webpage: null
+  description:
+  - A European series on algorithms to solve algebraic and geometric problems, their complexity, and implementation in computer algebra systems.
+  source: website/Resources/ConferenceSeries.html
+- id: pre-issac
+  short: Pre-ISSAC
+  name: Annual Computer Algebra Conferences pre-ISSAC
+  status: inactive
+  webpage: null
+  description:
+  - The regular ISSAC conference was directly proceeded by a series of annual conferences with names SYMSAC, EUROCAL, EUROSAM and EUROCAM.
+  source: website/Resources/ConferenceSeries.html

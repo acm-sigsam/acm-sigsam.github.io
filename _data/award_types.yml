@@ -1,0 +1,27 @@
+# Award categories, in display order. `id` is the subfolder of _awards/ and the URL /awards/<id>/;
+# `type` is the `type` field of the award files in that folder.
+- id: kanellakis-award
+  type: ACM Paris Kanellakis Theory and Practice Award
+  short: Kanellakis Award
+- id: jenks-prize
+  type: Richard D. Jenks Memorial Prize
+  short: Jenks Prize
+- id: acm-fellow
+  type: ACM Fellow
+  title: ACM Fellows        # heading shown on the pages (type stays singular: it is what the award files use)
+  short: ACM Fellows
+- id: issac-distinguished-paper
+  type: ISSAC Distinguished Paper Award
+  short: ISSAC Distinguished Paper
+- id: issac-distinguished-student-author
+  type: ISSAC Distinguished Student Author Award
+  short: ISSAC Distinguished Student Author
+- id: issac-distinguished-poster
+  type: ISSAC Distinguished Poster Award
+  short: ISSAC Distinguished Poster
+- id: issac-distinguished-software-demonstration
+  type: ISSAC Distinguished Software Demonstration Award
+  short: ISSAC Distinguished Software Demo
+- id: ams-robbins-prize
+  type: AMS David P. Robbins Prize
+  short: AMS Robbins Prize

@@ -1,0 +1,8 @@
+---
+title: Awards
+permalink: /awards/
+---
+{% for t in site.data.award_types %}
+  <h2><a href="{{ '/awards/' | append: t.id | append: '/' | relative_url }}">{{ t.title | default: t.type }}</a></h2>
+  {% include award-table.html id=t.id %}
+{% endfor %}

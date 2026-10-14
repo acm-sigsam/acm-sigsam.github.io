@@ -1,0 +1,11 @@
+{%- comment -%} Table of the meetings of series include.id (a subfolder of _conferences/), newest first. {%- endcomment -%}
+{% capture folder %}_conferences/{{ include.id }}/{% endcapture %}
+{% assign items = site.conferences | where_exp: "c", "c.relative_path contains folder" | sort: "date" | reverse %}
+<table>
+  <thead><tr><th>Year</th><th>Meeting</th><th>Location</th></tr></thead>
+  <tbody>
+  {% for c in items %}
+    <tr><td>{{ c.year }}</td><td><a href="{{ c.url | relative_url }}">{{ c.title }}</a></td><td>{{ c.location }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,53 @@
+                        Call for Posters ISSAC 2008
+       International Symposium on Symbolic and Algebraic Computation
+                   RISC, Hagenberg, Austria, July 20-23, 2008
+
+                 http://www.risc.uni-linz.ac.at/issac2008/
+
+ISSAC, the International Symposium on Symbolic and Algebraic Computation, is
+the  premier  annual  gathering of  the  Symbolic  Mathematical  Computation
+community  to  present  and  discuss  new developments and original research
+results in all areas of symbolic mathematical computation.
+
+The  poster  sessions  at  ISSAC  are  ideal  avenues  for presenting recent
+research results  or  ongoing  research  projects  that  might  not  yet  be
+complete, but whose preliminary results are already interesting nonetheless.
+
+Authors  are  invited  to submit  extended abstracts  of  posters in the PDF
+format. All posters will be reviewed by the Poster Committee with input from
+experts in  the relevant areas.  Posters will be evaluated based on content,
+novelty,   originality,   contribution,   value   to   the   community,  and
+presentation.  Abstracts of accepted Posters  will be distributed in printed
+form at the conference venue and will be printed in an upcoming issue of the
+ACM SIGSAM Communications in Computer Algebra.
+
+Details  on  submission  of  contributions  may  be  found  by  visiting the
+submission  page  at   www.easychair.org/conferences/?conf=issac2008posters.  
+Authors are expected to present their work at the symposium.
+
+
+IMPORTANT DATES
+
+Deadline to submit extended abstract (.pdf): May 1, 2008
+Notification of Acceptance: June 1, 2008
+Deadline to submit (.tex) updated abstracts: June 15, 2008
+
+CONFERENCE TOPICS
+
+Posters can be on any topic  mentioned in the  Call for Papers of ISSAC 2008
+which include but are not restricted to the following areas:
+Algorithmic Mathematics: Algebraic, Symbolic and Symbolic-Numeric Algorithms
+Computer Science: Theoretical and practical problems in Symbolic Computation
+Applications: Problem treatments using  Algorithmic, Symbolic,  or Symbolic-
+Numeric Algorithms in novel or  essential  ways,  including  applications to
+Education,  The Sciences,  Engineering,  or Business.  Reports  on  computer
+implementations are welcome.
+
+POSTER COMMITTEE
+
+Maki Iwami, Osaka University of Economics and Law, Japan
+Wen-shin Lee, University of Antwerp, Belgium
+Austin Lobo, Washington College, USA; Chair
+Clement Pernet, University of Washington, USA
+Ekaterina Shemyakova, RISC, Univ. Linz, Austria
+Min Wu, East China Normal University, P. R. China 

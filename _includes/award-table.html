@@ -1,0 +1,17 @@
+{%- comment -%} Table of the awards in category include.id (a subfolder of _awards/), newest first. {%- endcomment -%}
+{% capture folder %}_awards/{{ include.id }}/{% endcapture %}
+{% assign items = site.awards | where_exp: "a", "a.relative_path contains folder" | sort: "date" | reverse %}
+<table>
+  <thead><tr><th>Year</th><th>Awarded to</th><th>For</th></tr></thead>
+  <tbody>
+  {% for a in items %}
+    <tr>
+      <td>{{ a.year }}</td>
+      <td>{{ a.recipients | join: ", " }}</td>
+      {%- assign what = a.paper | default: a.for -%}
+      {%- unless what -%}{%- assign what = a.citation | first | default: "Details" -%}{%- endunless -%}
+      <td><a href="{{ a.url | relative_url }}">{{ what }}</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

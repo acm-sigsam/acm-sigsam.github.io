@@ -1,0 +1,81 @@
+                           SECOND CALL FOR PAPERS
+                                 ISSAC 2008
+        International Symposium on Symbolic and Algebraic Computation
+                     Hagenberg, Austria, July 20-23, 2008
+
+                  http://www.risc.uni-linz.ac.at/issac2008/
+
+The International Symposium on Symbolic and  Algebraic  Computation  (ISSAC)
+is the premier annual conference to present  and  discuss  new  developments
+and  original  research  results  in  all  areas  of  symbolic  mathematical
+computation. Planned  activities  include  invited  presentations,  research
+papers, poster sessions, tutorial  courses,  vendor  exhibits  and  software
+demonstrations.
+
+IMPORTANT DATES
+
+ISSAC 2008 will be held July 20 to 23, 2008 in Hagenberg near Linz, Austria
+Deadline for submissions: January 14, 2008 (Midnight [24:00 EST])
+
+CONFERENCE TOPICS
+
+They include, but are not limited to:
+
+Algorithmic  Mathematics:    Algebraic,   symbolic   and    symbolic-numeric
+algorithms.  Simplification,  function manipulation, summation, integration,
+polynomial / differential / difference  equations,  linear  algebra,  number
+theory, group and invariant theory, geometric computing.
+
+Computer  Science:  Theoretical   and   practical   problems   in   symbolic
+computation.  Systems,  problem  solving  environments,   user   interfaces,
+software,   libraries, parallel / distributed   computing  and   programming
+languages,  concrete  analysis, benchmarking,  theoretical   and   practical
+complexity, automatic differentiation, code  generation,  mathematical  data
+structures and exchange protocols.
+
+Applications:  Problem treatments using  algebraic,  symbolic  or  symbolic-
+numeric computation in an essential or a novel way.  Engineering,  economics
+and finance, physical  and  biological  sciences,  computer science,  logic,
+mathematics and education.
+
+PROGRAM COMMITTEE
+
+John Abbott, Università di Genova, Italy
+Hirokazu Anai, Fujitsu Labs Ltd., Japan
+Laurent Buse, INRIA Sophia Antipolis, France
+Alicia Dickenstein, Universidad de Buenos Aires, Argentina
+Xiao-Shan Gao, Key Laboratory of Mathematics Mechanization, China
+Laureano Gonzalez-Vega, Universidad de Cantabria, Spain; (Chair)
+Willem de Graaf, Università di Trento, Italy
+Mark van Hoeij, Florida State University, USA
+Joris van der Hoeven, Université Paris-Sud, France
+Evelyne Hubert, INRIA Sophia Antipolis, France
+Alexander Hulpke, Colorado State University, USA
+M'hammed El Kahoui, Cadi Ayyad University Marrakech, Morocco
+Manuel Kauers, RISC, Univ. Linz, Austria
+Jürgen Klüners, Heinrich-Heine-Universität Düsseldorf, Germany
+Viktor Levandovskyy, RWTH Aachen, Germany
+Steve Linton, University of St. Andrews, UK
+Greg Reid, ORCCA, University of Western Ontario, Canada
+Igor Shparlinski, Macquarie University, Australia
+Arne Storjohann, University of Waterloo, Canada
+Lihong Zhi, Mathematics Mechanization Research Center, China
+
+INSTRUCTIONS TO AUTHORS
+
+Original research results and insightful analyses of  current  concerns  are
+solicited for submission. Submissions must not duplicate work  published  or
+submitted for publication elsewhere. Papers will be reviewed by the  program
+committee and additional referees. Proceedings will be  distributed  at  the
+symposium. Papers must be in English and should not exceed 8  pages  in  the
+standard format for ACM proceedings, or 20 to 22  pages  of  text  in  LaTeX
+12pt article style.
+
+To  submit your contribution,  please visit the  paper  submission  page  at  
+http://www.easychair.org/ISSAC2008/. Authors of accepted papers are expected
+to present their work at the symposium.
+
+   General Chair      Program Committee Chair       Local Arrangements Chair
+
+J. Rafael Sendra      Laureano González-Vega             Franz Winkler
+

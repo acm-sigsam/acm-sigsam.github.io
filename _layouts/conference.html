@@ -1,20 +1,113 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
+{%- comment -%}
+  One meeting of a conference series. Everything shown comes from the front matter:
+  title, series, series_id, year, date, date_precision, end_date, date_text, location, venue, full_name,
+  website, proceedings [{label, url}], proceedings_text, calls [{title, file, url, source}] (file = copy in assets/conferences/calls/),
+  committees [{name, members [{name, affiliation, role}]}], officers [{role, name, affiliation}],
+  invited_speakers / tutorials [{name, affiliation, title}], sessions [{title, organizers, url}], photos [{file, caption}], notes, sources.
+{%- endcomment -%}
+{% assign s = site.data.conference_series | where: "id", page.series_id | first %}
+<article class="conference">
+  <p class="kicker"><a href="{{ '/conferences/' | relative_url }}">Conferences</a> · <a href="{{ '/conferences/' | append: page.series_id | append: '/' | relative_url }}">{{ s.short | default: page.series }}</a></p>
+  <h1>{{ page.title }}</h1>
+  {% if page.full_name %}<p class="lead">{{ page.full_name }}</p>{% endif %}
 
-  {% include head.html %}
+  <dl class="facts">
+    <dt>Date</dt>
+    <dd>
+      {%- if page.end_date and page.date_precision == "day" -%}
+        {{ page.date | date: "%-d %B %Y" }} – {{ page.end_date | date: "%-d %B %Y" }}
+      {%- else -%}
+        {% include fuzzy-date.html date=page.date precision=page.date_precision %}
+      {%- endif -%}
+    </dd>
+    {% if page.location %}<dt>Location</dt><dd>{{ page.location }}</dd>{% endif %}
+    {% if page.venue %}<dt>Venue</dt><dd>{{ page.venue }}</dd>{% endif %}
+    {% if page.website %}<dt>Website</dt><dd><a href="{% unless page.website contains '://' %}http://{% endunless %}{{ page.website }}">{{ page.website }}</a></dd>{% endif %}
+    {% if page.proceedings.size > 0 or page.proceedings_text %}
+      <dt>Proceedings</dt>
+      <dd>
+        {% for p in page.proceedings %}<a href="{{ p.url }}">{{ p.label }}</a>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
+        {% if page.proceedings_text %}<div class="small">{{ page.proceedings_text }}</div>{% endif %}
+      </dd>
+    {% endif %}
+    {% if page.calls.size > 0 %}
+      <dt>Calls</dt>
+      <dd>
+        {% for c in page.calls %}
+          {% if c.file %}<a href="{{ c.file | relative_url }}">{{ c.title }}</a>{% if c.url %} <span class="small">(<a href="{{ c.url }}">original link</a>)</span>{% endif %}
+          {% elsif c.url %}<a href="{{ c.url }}">{{ c.title }}</a>
+          {% else %}{{ c.title }}{% endif %}{% unless forloop.last %}<br>{% endunless %}
+        {% endfor %}
+      </dd>
+    {% endif %}
+  </dl>
 
-  <body>
+  {% if page.officers.size > 0 %}
+    <h2>Organizers</h2>
+    <table>
+      <tbody>
+      {% for o in page.officers %}
+        <tr><th scope="row">{{ o.role }}</th><td>{{ o.name }}{% if o.affiliation %}, <span class="muted">{{ o.affiliation }}</span>{% endif %}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
 
-    {% include header.html %}
+  {% for c in page.committees %}{% if c.members.size > 0 %}
+    <h2>{{ c.name }}</h2>
+    <ul class="people">
+      {% for p in c.members %}
+        <li>{{ p.name }}{% if p.role %} <span class="role">({{ p.role }})</span>{% endif %}{% if p.affiliation %}, <span class="muted">{{ p.affiliation }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}{% endfor %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+  {% if page.invited_speakers.size > 0 %}
+    <h2>{{ page.invited_label | default: "Invited speakers" }}</h2>
+    <ul class="people">
+      {% for p in page.invited_speakers %}
+        <li>{{ p.name }}{% if p.affiliation %}, <span class="muted">{{ p.affiliation }}</span>{% endif %}{% if p.title %}: <em>{{ p.title }}</em>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.tutorials.size > 0 %}
+    <h2>Tutorials</h2>
+    <ul class="people">
+      {% for p in page.tutorials %}
+        <li>{% if p.name %}{{ p.name }}{% if p.affiliation %}, <span class="muted">{{ p.affiliation }}</span>{% endif %}: {% endif %}<em>{{ p.title }}</em></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.sessions.size > 0 %}
+    <h2>Sessions</h2>
+    <ul class="sessions">
+      {% for x in page.sessions %}
+        <li>{% if x.url %}<a href="{{ x.url }}">{{ x.title }}</a>{% else %}{{ x.title }}{% endif %}{% if x.organizers.size > 0 %}<br><span class="small">Organizers: {% for o in x.organizers %}{% if o.name %}{{ o.name }}{% if o.affiliation %} ({{ o.affiliation }}){% endif %}{% else %}{{ o }}{% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.photos.size > 0 %}
+    <h2>Photos</h2>
+    <div class="gallery">
+      {% for p in page.photos %}
+        <figure>
+          <a href="{{ p.file | relative_url }}"><img src="{{ p.file | relative_url }}" alt="{{ p.caption | default: page.title | escape }}" loading="lazy"></a>
+          {% if p.caption %}<figcaption>{{ p.caption }}</figcaption>{% endif %}
+        </figure>
+      {% endfor %}
     </div>
+  {% endif %}
 
-    {% include footer.html %}
+  {% if page.notes.size > 0 %}
+    <h2>Notes</h2>
+    <ul class="notes">{% for n in page.notes %}<li>{{ n }}</li>{% endfor %}</ul>
+  {% endif %}
 
-  </body>
-
-</html>
+  {{ content }}
+</article>

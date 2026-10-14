@@ -1,0 +1,111 @@
+
+
+CALL FOR PAPERS PASCO 2017
+
+9th International Workshop on Parallel and Symbolic Computation
+Vancouver, Canada, May 25, 2018
+
+http://sigsam.org/PASCO/2018/
+
+The International Workshop on Parallel and Symbolic Computation
+(PASCO) is a series of workshops dedicated to the promotion and
+advancement of parallel algorithms and software in all areas of
+mathematical computation. 
+
+PASCO 2018 will be held in conjunction with the IEEE International
+Parallel & Distributed Processing Symposium (IPDPS). 
+
+www.ipdps.org
+
+PASCO will be run as a satellite workshop immediately following 
+IPDPS.  The collocation of PASCO and IPDPS provides the opportunity
+for computer algebra researchers interested in parallel computing 
+to participate in one of the main parallel computing conferences
+and for attendees of IPDPS to be exposed to problems in symbolic
+computation.
+
+Since PASCO will run as a one day workshop there is limited room
+for papers/presentations.  Paper selection will be based on a
+two page extended abstract with quick turn around.  Selected papers
+may be extended to full length.
+
+
+
+CONFERENCE TOPICS
+
+All topics covered traditionally by PASCO including:
+
+* Design and analysis of parallel algorithms for computer algebra
+* Practical parallel implementation of symbolic or symbolic-numeric algorithms 
+* Design of high-performance algebraic packages and systems
+* Data representation and distributed data-structures
+* Considerations for modern hardware and hardware acceleration
+    technologies (multi-cores, GPUs, FPGAs) 
+* Cache complexity and cache-oblivious algorithms for computer algebra
+* Parallel implementations of computer algebra algorithms on GPUs
+* Parallel algorithm implementation and performance tuning
+* Compile-time and run-time techniques for automating optimization
+  and platform adaptation of computer algebra algorithms
+* Applications of high-performance computer algebra in
+  theorem proving, cryptography, computational biology, number theory,
+  group theory, satisfiability checking, SAT solving, etc.
+
+
+SUBMISSION INSTRUCTIONS
+
+The conference invites submissions presenting original research.  
+Submissions in the form of extended abstracts (2-4 pages) single-spaced 
+double-column pages using 10-point size font on 8.5x11 inch pages 
+(IEEE conference style), including figures, tables, and references. 
+The submitted manuscripts should include author names and 
+affiliations. See style templates for details:
+
+http://www.ipdps.org/templates/IEEECS_CPS_LaTeX_Letter_2Col.zip
+
+Papers are exclusively submitted via easy chair at
+
+       https://easychair.org/conferences/?conf=pasco2018
+
+Papers must be written in English.  Papers must contain original research
+and may not duplicate work published or submitted for publication elsewhere.
+Papers will be reviewed by the Program Committee and external referees.
+
+Authors of selected abstracts will be invited to extend their submission
+to full paper (upto 10 pages).  All accepted papers will be distributed at 
+PASCO 2018 and includedin the IPDPS proceedings.
+
+At least one author of each accepted paper must attend PASCO 2018 to present
+his or her paper.
+
+ORGANISING COMMITTEE
+
+General chairs: Jeremy Johnson, Drexel University USA (johnsojr@drexel.edu)
+                Macr Moreno Maza, University of Western Ontario CANADA (moreno@csd.uwo.ca)
+          
+PROGRAMME COMMITTEE
+
+ Russel Bradford          University of Bath, England
+ Jean-Guillaume Dumas     Universite Grenoble, France
+ Jean-Charles Faugere (co-chair)   INRIA Paris-Rocquencourt, France
+ Joachim von zur Gathen   Universitaet Bonn, Germany
+ Pascal Giorgi            Universite Montpellier, France
+ Jeremy Johnson           Drexel University, USA
+ Erich Kaltofen           North Carolina State University, USA
+ Herbert Kuchen           University of Muenster, Germany
+ Marc Moreno Maza         Western University, Canada
+ Michael Monagan          Simon Fraser University, Canada
+ Clement Pernet           Universite Grenoble, France
+ Daniel Roche             US Naval Academy, Annapolis, USA
+ Wolfgang Schreiner       Johannes Kepler University, Linz, Austria
+ Allan Steel              University of Sydney, Australia
+ Emmanuel Thome           INRIA Nancy, France
+ 
+IMPORTANT DATES
+
+  Abstract submission deadline: Monday February 19 2018 (23:59 PST).
+  Notification of acceptance/rejection: Monday March 5, 2018.
+  Paper revisions due Monday April 2, 2018.
+
+
+You can unsubscribe for this list at any time through this link:
+Unsubscribe

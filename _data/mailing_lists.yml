@@ -1,0 +1,23 @@
+# SIGSAM mailing lists, from website/MailingLists.html. Shown on the home page (_includes/mailing-lists.html).
+intro: SIGSAM runs the following email lists / news feeds.
+lists:
+  - name: The SIGSAM Members List
+    description: This is a moderated email list which goes to all SIGSAM members. If you are a SIGSAM member, you can join the list. Content is publicly available for browsing.
+    join: http://listserv.acm.org/scripts/wa-ACMLPX.exe?SUBED1=SIGSAM-MEMBERS&A=1
+    browse: http://listserv.acm.org/archives/sigsam-members.html
+    feeds:
+      - { label: HTML, url: "http://listserv.acm.org/scripts/wa-ACMLPX.exe?A0=SIGSAM-MEMBERS" }
+      - { label: ATOM, url: "http://www.listserv.acm.org/scripts/wa-ACMLPX.exe?RSS&L=SIGSAM-MEMBERS&v=ATOM1.0" }
+      - { label: RSS1, url: "http://www.listserv.acm.org/scripts/wa-ACMLPX.exe?RSS&L=SIGSAM-MEMBERS&v=1.0" }
+      - { label: RSS2, url: "http://www.listserv.acm.org/scripts/wa-ACMLPX.exe?RSS&L=SIGSAM-MEMBERS&v=2.0" }
+  - name: The SIGSAM Friends List
+    description: This is a moderated email list open to anyone who wants to get some SIGSAM-related information. Content is publicly available for browsing.
+    join: http://listserv.acm.org/scripts/wa-ACMLPX.exe?SUBED1=SIGSAM-FRIENDS&A=1
+    browse: http://listserv.acm.org/archives/sigsam-friends.html
+    feeds:
+      - { label: HTML, url: "http://listserv.acm.org/scripts/wa-ACMLPX.exe?A0=SIGSAM-FRIENDS" }
+      - { label: ATOM, url: "http://listserv.acm.org/scripts/wa-ACMLPX.exe?RSS&L=SIGSAM-FRIENDS&v=ATOM1.0" }
+      - { label: RSS1, url: "http://www.listserv.acm.org/scripts/wa-ACMLPX.exe?RSS&L=SIGSAM-FRIENDS&v=1.0" }
+      - { label: RSS2, url: "http://www.listserv.acm.org/scripts/wa-ACMLPX.exe?RSS&L=SIGSAM-FRIENDS&v=2.0" }
+outro: If you would like to start a mailing list for a SIGSAM related topic then it is possible for this to be run and facilitated by SIGSAM. Suggestions can be made to
+contact: Chair_SIGSAM@acm.org

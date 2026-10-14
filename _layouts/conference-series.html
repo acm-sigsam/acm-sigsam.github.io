@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% assign s = site.data.conference_series | where: "id", page.series_id | first %}
+<article>
+  <p class="kicker"><a href="{{ '/conferences/' | relative_url }}">Conferences</a>{% if s.parent %} · <a href="{{ '/conferences/' | append: s.parent | append: '/' | relative_url }}">{{ s.parent | upcase }}</a>{% endif %}</p>
+  <h1>{{ s.short }}{% if s.name != s.short %}: {{ s.name }}{% endif %}</h1>
+  {% for p in s.description %}<p>{{ p }}</p>{% endfor %}
+  {% if s.webpage %}<p><a href="{{ s.webpage }}">Series webpage</a></p>{% endif %}
+  {% if s.steering_committee.size > 0 %}
+    <h2>Steering committee{% if s.steering_committee_as_of %} ({{ s.steering_committee_as_of }}){% endif %}</h2>
+    <ul class="people">
+      {% for p in s.steering_committee %}<li>{{ p.name }}{% if p.role %} <span class="role">({{ p.role }})</span>{% endif %}{% if p.affiliation %}, <span class="muted">{{ p.affiliation }}</span>{% endif %}{% if p.term %} · {{ p.term }}{% endif %}</li>{% endfor %}
+    </ul>
+  {% endif %}
+  <h2>Meetings</h2>
+  {% include conference-table.html id=s.id %}
+</article>

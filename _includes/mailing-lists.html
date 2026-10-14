@@ -1,0 +1,12 @@
+{%- comment -%} The SIGSAM mailing lists (data: _data/mailing_lists.yml, from website/MailingLists.html). {%- endcomment -%}
+{%- assign ml = site.data.mailing_lists -%}
+<section class="mailing-lists">
+  <p>{{ ml.intro }}</p>
+  {% for l in ml.lists %}
+    <h3>{{ l.name }}</h3>
+    <p>{{ l.description }}</p>
+    <p class="ml-links"><a href="{{ l.join }}">Join the list</a> · <a href="{{ l.browse }}">Browse the archive</a></p>
+    <p class="feeds">{% for f in l.feeds %}<a href="{{ f.url }}">{{ f.label }}</a>{% endfor %}</p>
+  {% endfor %}
+  <p>{{ ml.outro }} <a href="mailto:{{ ml.contact }}">{{ ml.contact }}</a>.</p>
+</section>

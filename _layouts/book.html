@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{%- comment -%}
+  One book of the SIGSAM book list. Front matter: title, subtitle, authors, editors, edition, series,
+  series_number, publisher, place, year, pages, other, citation (the entry exactly as in the old list),
+  list_year (the year section it was listed under), sources; books added in 2026 have
+  added, link (publisher's page), unverified (fields not confirmed by the publisher's metadata) instead of list_year.
+{%- endcomment -%}
+<article class="book">
+  <p class="kicker"><a href="{{ '/books/' | relative_url }}">Books</a> · {% if page.added %}since 2007{% else %}{{ page.list_year }}{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="lead">{{ page.subtitle }}</p>{% endif %}
+  <dl class="facts">
+    {% if page.authors.size > 0 %}<dt>Authors</dt><dd>{{ page.authors | join: "; " }}</dd>{% endif %}
+    {% if page.editors.size > 0 %}<dt>Editors</dt><dd>{{ page.editors | join: "; " }}</dd>{% endif %}
+    {% if page.edition %}<dt>Edition</dt><dd>{{ page.edition }}</dd>{% endif %}
+    {% if page.series %}<dt>Series</dt><dd>{{ page.series }}{% if page.series_number %}, {{ page.series_number }}{% endif %}</dd>{% endif %}
+    {% if page.publisher %}<dt>Publisher</dt><dd>{{ page.publisher }}{% if page.place %}, {{ page.place }}{% endif %}</dd>{% endif %}
+    {% if page.year %}<dt>Year</dt><dd>{{ page.year }}</dd>{% endif %}
+    {% if page.pages %}<dt>Pages</dt><dd>{{ page.pages }}</dd>{% endif %}
+    {% if page.other %}<dt>Notes</dt><dd>{{ page.other }}</dd>{% endif %}
+    {% if page.link %}<dt>Publisher's page</dt><dd><a href="{{ page.link }}">{{ page.link }}</a></dd>{% endif %}
+  </dl>
+  {% unless page.added %}
+  <h2>Entry in the SIGSAM book list</h2>
+  <blockquote>{{ page.citation }}</blockquote>
+  {% endunless %}
+  {{ content }}
+</article>

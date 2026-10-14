@@ -1,0 +1,68 @@
+
+                       Call for Software Presentations
+                                 ISSAC 2008
+        International Symposium on Symbolic and Algebraic Computation
+                    RISC, Hagenberg, Austria, July 20-23, 2008
+
+                  http://www.risc.uni-linz.ac.at/issac2008/
+
+ISSAC, the  International Symposium on Symbolic and  Algebraic  Computation,
+is the premier  annual  gathering of  the Symbolic  Mathematical Computation
+community  to  present  and  discuss  new developments and original research
+results in symbolic and algebraic computation.
+
+Software  developers  are  invited  to  present  new  software  for  solving
+problems  in symbolic and algebraic computation  at  ISSAC 2008.  Presenters
+will be given 15 minutes to demonstrate  their software to participants in a
+special session  for  software presentations.  There  will  be  5 additional
+minutes between presentations for setup.
+
+Please submit an extended abstract in PDF format describing the software and
+what you will present to Michael Monagan by e-mail  at mmonagan@cecm.sfu.ca.
+Please include in the subject heading ISSAC08 Software Presentation.  Please
+include a valid URL or contact address for  obtaining the  software packages
+and documentation.
+
+Abstracts  will  be  evaluated   based  on  content,  novelty,  originality,
+importance  and  potential  value of  the software to the community.  Please
+identify  in your  extended abstract  what is new  that  will be  presented.
+If you are also presenting a paper at ISSAC 2008  related  to your software,
+please   identify,  in  your  e-mail,   the   differences  between  the  two
+presentations.  You  may  also  present  your  software  as  a  poster  (see
+http://www.risc.uni-linz.ac.at/issac2008/ the call for posters).
+
+Abstracts of  accepted  software presentations  will  be  distributed at the
+symposium  and  also  printed  in  an  upcoming  issue  of  the  ACM  SIGSAM
+Communications in Computer Algebra.
+
+IMPORTANT DATES
+
+Deadline to submit extended abstract (.pdf): May 1, 2008
+Notification of Acceptance: June 1, 2008
+Deadline to submit (.tex) updated abstracts: June 15, 2008
+
+CONFERENCE TOPICS
+
+They include, but are not limited to:
+
+Algorithmic  Mathematics:    Algebraic,   symbolic   and    symbolic-numeric
+algorithms.  Simplification,  function manipulation, summation, integration,
+polynomial / differential / difference  equations,  linear  algebra,  number
+theory, group and invariant theory, geometric computing.
+
+Computer  Science:  Theoretical   and   practical   problems   in   symbolic
+computation.  Systems,  problem  solving  environments,   user   interfaces,
+software,   libraries, parallel / distributed   computing  and   programming
+languages,  concrete  analysis, benchmarking,  theoretical   and   practical
+complexity, automatic differentiation, code  generation,  mathematical  data
+structures and exchange protocols.
+
+Applications:  Problem treatments using  algebraic,  symbolic  or  symbolic-
+numeric computation in an essential or a novel way.  Engineering,  economics
+and finance, physical  and  biological  sciences,  computer science,  logic,
+mathematics and education.
+
+SOFTWARE PRESENTATIONS CHAIR
+
+Michael Monagan, Simon Fraser University, Canada: mmonagan@cecm.sfu.ca
+

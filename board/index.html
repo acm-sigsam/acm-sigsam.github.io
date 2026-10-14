@@ -1,0 +1,37 @@
+---
+title: Executive Committee
+permalink: /board/
+---
+{%- comment -%} Lists the board collection (_board/), one entry per term, newest first; the newest term is shown in full. {%- endcomment -%}
+<p>The operations of SIGSAM are governed by an Executive Committee of elected officers (Chair, Vice-Chair, Secretary, Treasurer), the Past Chair and appointed members.</p>
+{% assign terms = site.board | sort: "sort_key" | reverse %}
+{% assign current = terms | first %}
+{% if current %}
+  <h2>Current committee ({{ current.title }})</h2>
+  {% assign groups = current.members | group_by: "group" %}
+  {% for g in groups %}
+  <h3>{{ g.name }}</h3>
+  <div class="people-cards">
+  {% for m in g.items %}
+    {% assign o = site.officers | where: "slug", m.officer | first %}
+    <a class="person-card" href="{{ o.url | relative_url }}">
+      {% if o.photo %}<img src="{{ o.photo | relative_url }}" alt="" loading="lazy">{% else %}<span class="no-photo" aria-hidden="true"></span>{% endif %}
+      <span><span class="role">{{ m.role }}</span><strong>{{ m.name }}</strong>
+      <span class="small">{{ m.affiliation }}</span></span>
+    </a>
+  {% endfor %}
+  </div>
+  {% endfor %}
+{% endif %}
+<h2>All terms</h2>
+<table>
+  <thead><tr><th>Term</th><th>Chair</th></tr></thead>
+  <tbody>
+  {% for t in terms %}
+    {% assign chair = t.members | where: "role", "Chair" | first %}
+    {% assign acting = t.members | where: "role", "Acting Chair" | first %}
+    <tr><td><a href="{{ t.url | relative_url }}">{{ t.title }}</a></td><td>{% if chair %}{{ chair.name }}{% elsif acting %}{{ acting.name }} (acting){% endif %}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p><a href="{{ '/officers/' | relative_url }}">All officers »</a></p>

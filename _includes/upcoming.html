@@ -1,0 +1,12 @@
+{%- comment -%}
+  Sets `upcoming`: conferences whose end date (or date) is on or after the day the site is built,
+  soonest first. GitHub Pages evaluates this at build time, so it is refreshed at every rebuild.
+{%- endcomment -%}
+{%- assign today = site.time | date: "%Y%m%d" | plus: 0 -%}
+{%- assign upcoming = "" | split: "" -%}
+{%- for c in site.conferences -%}
+  {%- assign last = c.end_date | default: c.date -%}
+  {%- assign last_n = last | date: "%Y%m%d" | plus: 0 -%}
+  {%- if last_n >= today -%}{%- assign upcoming = upcoming | push: c -%}{%- endif -%}
+{%- endfor -%}
+{%- assign upcoming = upcoming | sort: "date" -%}

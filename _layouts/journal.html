@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{%- comment -%}
+  One journal of the SIGSAM journal guide. Front matter: title, abbreviation, category, position, status,
+  urls, publisher, editors_role, editors (as written), editor_links [{name, url}], editorial_board {label, url},
+  cover, sources.
+{%- endcomment -%}
+<article class="journal">
+  <p class="kicker"><a href="{{ '/journals/' | relative_url }}">Journals</a> · {{ page.category }}</p>
+  <div class="journal-head">
+    {% if page.cover %}<img class="journal-cover" src="{{ page.cover | relative_url }}" alt="Cover of {{ page.title }}">{% endif %}
+    <div>
+      <h1>{{ page.title }}{% if page.abbreviation %} ({{ page.abbreviation }}){% endif %}</h1>
+      {% if page.status %}<p class="lead">{{ page.status }}</p>{% endif %}
+    </div>
+  </div>
+  <dl class="facts">
+    {% if page.urls.size > 0 %}<dt>Website</dt><dd>{% for u in page.urls %}<a href="{{ u }}">{{ u }}</a>{% unless forloop.last %}<br>{% endunless %}{% endfor %}</dd>{% endif %}
+    {% if page.site_page %}<dt>On this site</dt><dd><a href="{{ page.site_page | relative_url }}">{{ page.title }} page</a></dd>{% endif %}
+    {% if page.publisher %}<dt>Publisher</dt><dd>{{ page.publisher }}</dd>{% endif %}
+    {% if page.editors %}
+      <dt>{{ page.editors_role | default: "Editors" }}</dt>
+      <dd>
+        {%- assign ed = page.editors -%}
+        {%- for l in page.editor_links -%}
+          {%- capture link -%}<a href="{{ l.url }}">{{ l.name }}</a>{%- endcapture -%}
+          {%- assign ed = ed | replace_first: l.name, link -%}
+        {%- endfor -%}
+        {{ ed }}
+      </dd>
+    {% endif %}
+    {% if page.editorial_board %}<dt>Board</dt><dd><a href="{{ page.editorial_board.url }}">{{ page.editorial_board.label }}</a></dd>{% endif %}
+  </dl>
+  {{ content }}
+</article>

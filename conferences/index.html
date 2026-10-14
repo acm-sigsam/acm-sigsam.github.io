@@ -1,0 +1,39 @@
+---
+title: Conferences
+permalink: /conferences/
+---
+{%- comment -%} Lists the conferences collection (_conferences/) by series, in the order of _data/conference_series.yml. {%- endcomment -%}
+{% include upcoming.html %}
+<h2>Upcoming</h2>
+{% if upcoming.size > 0 %}
+<ul class="dated">
+  {% for c in upcoming %}
+  <li>
+    <time datetime="{{ c.date | date_to_xmlschema }}">{% include conference-dates.html c=c %}</time>
+    <span><a href="{{ c.url | relative_url }}">{{ c.title }}</a>{% if c.location %}, {{ c.location }}{% endif %}{% if c.website %} · <a href="{% unless c.website contains '://' %}http://{% endunless %}{{ c.website }}">website</a>{% endif %}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No upcoming conferences are listed at the moment.</p>
+{% endif %}
+
+<h2>Main series</h2>
+{% assign mains = site.data.conference_series | where_exp: "s", "s.main" | sort: "main" %}
+<ul class="series-list">
+{% for s in mains %}
+  <li><a href="{{ '/conferences/' | append: s.id | append: '/' | relative_url }}">{{ s.short }}</a>{% if s.name != s.short %}: {{ s.name }}{% endif %}</li>
+{% endfor %}
+</ul>
+<h2>Other active series</h2>
+<ul class="series-list">
+{% for s in site.data.conference_series %}{% if s.status == "active" and s.parent == nil and s.main == nil %}
+  <li><a href="{{ '/conferences/' | append: s.id | append: '/' | relative_url }}">{{ s.short }}</a>{% if s.name != s.short %}: {{ s.name }}{% endif %}</li>
+{% endif %}{% endfor %}
+</ul>
+<h2>Inactive series</h2>
+<ul class="series-list">
+{% for s in site.data.conference_series %}{% if s.status == "inactive" %}
+  <li><a href="{{ '/conferences/' | append: s.id | append: '/' | relative_url }}">{{ s.short }}</a>{% if s.name != s.short %}: {{ s.name }}{% endif %}</li>
+{% endif %}{% endfor %}
+</ul>

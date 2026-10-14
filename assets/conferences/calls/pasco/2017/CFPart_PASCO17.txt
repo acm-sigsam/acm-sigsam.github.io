@@ -1,0 +1,142 @@
+
+		 CALL FOR PARTICIPATION PASCO 2017
+ 8th International Workshop on Parallel and Symbolic Computation
+Technical University of Kaiserslautern, Germany, July 23-24, 2017
+
+		http://sigsam.org/PASCO/2017/
+
+The International Workshop on Parallel and Symbolic Computation
+(PASCO) is a series of workshops dedicated to the promotion and
+advancement of parallel algorithms and software in all areas of
+mathematical computation. 
+
+		Online Registration Now Open
+       http://sigsam.org/PASCO/2017/registration.html
+
+
+INVITED SPEAKERS
+
+Florent Hivert,
+Laboratoire de Recherche en Informatique (LRI), Paris
+
+Paolo Bientinesi,
+RWTH Aachen, Germany
+Title: Compiling linear algebra expressions to high-performance code
+Abstract: Vectors, matrices and tensors are the mathematical objects universally 
+	  used to describe scientific phenomena, engineering processes, and 
+	  numerical algorithms. By contrast, processors only operate with scalars 
+	  and small arrays, and do not understand the language and the rules of 
+	  linear algebra. Because of this mismatch, any linear algebra expression 
+	  has to be translated in terms of the instructions supported by the 
+	  specific target processor. Over the course of many years, the linear 
+	  algebra community has put tremendous effort in the identification, 
+	  standardization, and optimization of a rich set of relatively simple 
+	  computational kernels--such as those included in the BLAS and LAPACK 
+	  libraries--that provide the necessary building blocks for just about any 
+	  linear algebra computation. The initial--daunting--task has thus been 
+	  reduced to the decomposition of a target linear algebra expression in 
+	  terms of said building blocks; we refer to this task as the "Linear 
+	  Algebra Mapping Problem" (LAMP). However, LAMP is itself an especially 
+	  challenging problem, requiring knowledge in high-performance computing, 
+	  compilers, and numerical linear algebra. In this talk we present the 
+	  problem, we give an overview of the solutions provided by several 
+	  programming languages and computing environments (such as Julia, Matlab, 
+	  R, ...), and introduce Linnea, a compiler to solve the general form of 
+	  LAMP. As shown through a set of test cases, Linnea's results are 
+	  comparable with those obtained by a human expert.
+
+Marc Moreno Maza,
+Western University, London, Ontario
+Title: Multithreaded programming on the GPU: pointers and hints for the computer algebraist
+Abstract: This 2-hour tutorial will attempt to cover the key principles that
+	  computer algebraists interested in GPU programming should have in
+	  mind. The first hour will introduce the basics of GPUs' architecture
+	  and the CUDA programming model: no preliminary experience with GPU
+	  programming will be assumed.  In the second hour, we shall discuss the
+	  recent developments in terms of GPUs' architecture and programming
+	  models as well as techniques for improving code performance.
+
+
+ACCEPTED PAPERS:
+
+The program committee has accepted the following papers:
+http://sigsam.org/PASCO/2017/papers.html
+
+
+CALL FOR PARTICIPATION:
+
+Online registration is now open.  For details on fees and to register
+online (this uses the same registration site as ISSAC17), please visit
+
+http://www.issac-conference.org/2017/registration.php
+
+In order to guarantee printed proceedings and a place at the banquet please register 
+before July 10th. As usual, discounts are available for students.
+On-site registration will be available, but incurs an extra fee.
+
+
+CONFERENCE TOPICS
+
+All topics covered traditionally by PASCO including:
+
+* Design and analysis of parallel algorithms for computer algebra
+* Practical parallel implementation of symbolic or symbolic-numeric algorithms 
+* Design of high-performance algebraic packages and systems
+* Data representation and distributed data-structures
+* Considerations for modern hardware and hardware acceleration
+    technologies (multi-cores, GPUs, FPGAs) 
+* Cache complexity and cache-oblivious algorithms for computer algebra
+* Parallel implementations of computer algebra algorithms on GPUs
+* Parallel algorithm implementation and performance tuning
+* Compile-time and run-time techniques for automating optimization
+  and platform adaptation of computer algebra algorithms
+* Applications of high-performance computer algebra in
+  theorem proving, cryptography, computational biology, number theory,
+  group theory, satisfiability checking, SAT solving, etc.
+
+PASCO 2017 is affiliated with and immediately precedes the 2017
+International Symposium on Symbolic and Algebraic Computation
+(ISSAC2017), also in Kaiserslautern. 
+Earlier meetings in the PASCO series (originally called Computer Algebra
+and Parallelism) include CAP'88 (Grenoble, France), CAP'90 (Ithaca, USA),
+PASCO'94 (Linz, Austria), PASCO'97 (Maui, U.S.A.), PASCO'07 (London, Canada),
+PASCO'10 (Grenoble, France) and PASCO'15 (Bath, UK).  
+
+
+ORGANISING COMMITTEE
+
+ General chair: Hans-Wolfgang Loidl, Heriot-Watt University, Edinburgh.
+ Programme Committee chairs: Michael Monagan, Simon Fraser University, Canada
+                             Jean-Charles Faugere, INRIA (Paris-Rocquencourt Research Center)
+ Local chairs: Claus Fieker and Wolfram Decker, Technical University of Kaiserslautern.
+ Treasurer:    Tommy Hofmann, Technical University of Kaiserslautern.
+ Publicity chair: Alexander Konovalov, University of St Andrews.
+
+
+PROGRAMME COMMITTEE
+
+ Russel Bradford          University of Bath, England
+ Jean-Guillaume Dumas     Universite Grenoble, France
+ Jean-Charles Faugere (co-chair)   INRIA Paris-Rocquencourt, France
+ Joachim von zur Gathen   Universitaet Bonn, Germany
+ Pascal Giorgi            Universite Montpellier, France
+ Jeremy Johnson           Drexel University, USA
+ Erich Kaltofen           North Carolina State University, USA
+ Herbert Kuchen           University of Muenster, Germany
+ Marc Moreno Maza         Western University, Canada
+ Michael Monagan (co-chair)  Simon Fraser University, Canada
+ Clement Pernet           Universite Grenoble, France
+ Daniel Roche             US Naval Academy, Annapolis, USA
+ Wolfgang Schreiner       Johannes Kepler University, Linz, Austria
+ Allan Steel              University of Sydney, Australia
+ Emmanuel Thome           INRIA Nancy, France
+ 
+
+IMPORTANT DATES
+
+    Abstract due Monday April 24th (23:59 PST).
+    Papers due Sunday April 30th (23:59 PST).
+    Decisions to authors Wednesday May 31st (23:59 PST).
+    Final papers due Wednesday June 21st (23:59 PST).
+    Registration deadline is July 10th.
+    PASCO17 is running July 23rd and 24th.

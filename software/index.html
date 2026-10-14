@@ -1,0 +1,24 @@
+---
+title: Computer Algebra Software
+permalink: /software/
+---
+{%- comment -%} Based on website/Resources/Software.html; entries come from the software collection (_software/). {%- endcomment -%}
+<p>SIGSAM maintains this collection of references to computer algebra systems, to support our citation policy. Click the name of each system to see further information, links and a citation in BibTeX format. If you have suggestions for changes or additions to this list please contact <a href="mailto:Infodir_SIGSAM@acm.org">Infodir_SIGSAM@acm.org</a>.</p>
+{% assign cats = "General purpose commercial systems|Broad purpose free computer algebra systems|Special Purpose Systems, Packages and Libraries" | split: "|" %}
+{% for cat in cats %}
+  <h2>{{ cat }}</h2>
+  {% assign items = site.software | where: "category", cat | sort: "position" %}
+  <ul>
+  {% for s in items %}
+    <li><a href="{{ s.url | relative_url }}">{{ s.title }}</a>{% if s.link %} <a class="ext" href="{{ s.link }}" title="{% if s.website %}Website{% else %}Repository{% endif %}">↗</a>{% endif %}{% if s.repo and s.website and s.repo != s.website %} <a class="ext" href="{{ s.repo }}" title="Repository">repo</a>{% endif %}{% if s.vendor %} (<a href="{{ s.vendor.url }}">{{ s.vendor.name }}</a>){% endif %}{% if s.summary %}: {{ s.summary }}{% endif %}</li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+{% assign others = site.software | where_exp: "s", "s.listed == false" | sort_natural: "title" %}
+{% if others.size > 0 %}
+  <h2>Other systems</h2>
+  <p class="small">These systems had a page on the previous SIGSAM website but were not on its software list; most pages give only the name.</p>
+  <ul class="series-list">
+  {% for s in others %}<li><a href="{{ s.url | relative_url }}">{{ s.title }}</a></li>{% endfor %}
+  </ul>
+{% endif %}

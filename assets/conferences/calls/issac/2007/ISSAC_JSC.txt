@@ -1,0 +1,70 @@
+Call for Papers
+---------------
+  
+Journal of Symbolic Computation
+Special Issue on Symbolic and Algebraic Computation
+Guest Editors: Carlos D'Andrea & Bernard Mourrain
+ 
+The special issue is related to topics discussed in the context of the 
+ISSAC Conference in July 2007 at Waterloo, Canada.
+ 
+The International Symposium on Symbolic and Algebraic Computation (ISSAC) is the 
+premier annual conference to present and discuss new developments and
+originalresearch results in all areas of symbolic mathematical computation.
+ 
+Topics include, but are not limited to:
+ 
+Algorithmic Mathematics:
+Algebraic, symbolic and symbolic-numeric algorithms. Simplification, function
+manipulation, summation, integration, polynomial/differential/difference
+equations, linear algebra, number theory, group and invariant theory,
+geometric computing.
+ 
+Computer Science:
+Theoretical and practical problems in symbolic computation. Systems,
+problem solving environments, user interfaces, software, libraries, parallel/
+distributed computing and programming languages, concrete analysis,
+benchmarking, theoretical and practical complexity, automatic differentiation, 
+code generation, mathematical data structures and exchange protocols.
+ 
+Applications:
+Problem treatments using algebraic, symbolic or symbolic-numeric
+computation in an essential or a novel way. Engineering, economics and finance,
+physical and biological sciences, computer science, logic, mathematics and education.
+ 
+
+The special issue will contain a selection of papers which 
+substantially extend existing works on these topics. The submission is
+open to contributions  not necessarly related to papers included in the
+proceedings of ISSAC 07.
+ 
+The guiding principles for the publication procedure will be the following:
+ 
+* Original research results and insightful analysis of current concerns are 
+solicited for submission. Submissions must not duplicate work already
+published or submitted for publication elsewhere. Further insights on papers
+included in the Proceedings of the ISSAC 2007 Conference are welcome, but the new
+contributions should be relevant.
+
+The paper should explain in its introduction, what the problem is, its importance, the contribution of the paper, how it
+is related to the existing literature, and what are the significant
+improvements/enhancement compared to the related ISSAC 2007 paper, if it
+exists.
+
+ 
+* All the papers will be refereed according to the JSC standards.
+ 
+* Papers should be submitted to http://www.easychair.org/jsc-issac07/
+ 
+* DEADLINE: NOVEMBER 30, 2007
+ 
+* The format is pdf. Please prepare your manuscript by using the JSC style
+  files, which are available from the JSC home pages at
+  http://www4.ncsu.edu/~hong/jsc.htm.
+ 
+* Notification of acceptance: around end of February 2008.
+ 
+* The final versions should be sent in by the end of March 2008, with
+tex sources, in the same way as the initial submission.
+ 
+* The special issue is expected to appear by the time of ISSAC 2008.

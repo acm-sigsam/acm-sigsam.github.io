@@ -1,0 +1,96 @@
+
+		 CALL FOR PAPERS PASCO 2017
+ 8th International Workshop on Parallel and Symbolic Computation
+Technical University of Kaiserslautern, Germany, July 23-24, 2017
+
+		http://sigsam.org/PASCO/2017/
+
+The International Workshop on Parallel and Symbolic Computation
+(PASCO) is a series of workshops dedicated to the promotion and
+advancement of parallel algorithms and software in all areas of
+mathematical computation. 
+
+
+
+CONFERENCE TOPICS
+
+All topics covered traditionally by PASCO including:
+
+* Design and analysis of parallel algorithms for computer algebra
+* Practical parallel implementation of symbolic or symbolic-numeric algorithms 
+* Design of high-performance algebraic packages and systems
+* Data representation and distributed data-structures
+* Considerations for modern hardware and hardware acceleration
+    technologies (multi-cores, GPUs, FPGAs) 
+* Cache complexity and cache-oblivious algorithms for computer algebra
+* Parallel implementations of computer algebra algorithms on GPUs
+* Parallel algorithm implementation and performance tuning
+* Compile-time and run-time techniques for automating optimization
+  and platform adaptation of computer algebra algorithms
+* Applications of high-performance computer algebra in
+  theorem proving, cryptography, computational biology, number theory,
+  group theory, satisfiability checking, SAT solving, etc.
+
+PASCO 2017 is affiliated with and immediately precedes the 2017
+International Symposium on Symbolic and Algebraic Computation
+(ISSAC2017), also in Kaiserslautern. 
+Earlier meetings in the PASCO series (originally called Computer Algebra
+and Parallelism) include CAP'88 (Grenoble, France), CAP'90 (Ithaca, USA),
+PASCO'94 (Linz, Austria), PASCO'97 (Maui, U.S.A.), PASCO'07 (London, Canada),
+PASCO'10 (Grenoble, France) and PASCO'15 (Bath, UK).  
+
+SUBMISSION INSTRUCTIONS
+
+The conference invites submission of papers presenting original research,
+either in the form of extended abstracts (2 pages) or full papers (up to 10 pages).
+Please use the ACM Master Article template style file (two column) available here:
+
+       http://www.acm.org/publications/proceedings-template
+ 
+Papers are exclusively submitted via easy chair at
+
+       https://easychair.org/conferences/?conf=pasco2017
+
+Papers must be written in English.  Papers must contain original research
+and may not duplicate work published or submitted for publication elsewhere.
+Papers will be reviewed by the Program Committee and external referees.
+All accepted papers will be distributed at PASCO 2017. Publication in the
+form of a formal proceedings is planned through the ACM Digital Library (application pending). 
+
+At least one author of each accepted paper must attend PASCO 2017 to present
+his or her paper.
+
+ORGANISING COMMITTEE
+
+ General chair: Hans-Wolfgang Loidl, Heriot-Watt University, Edinburgh.
+ Programme Committee chairs: Michael Monagan, Simon Fraser University, Canada
+                             Jean-Charles Faugere, INRIA (Paris-Rocquencourt Research Center)
+ Local chairs: Claus Fieker and Wolfram Decker, Technical University of Kaiserslautern.
+ Treasurer:    Tommy Hofmann, Technical University of Kaiserslautern.
+ Publicity chair: Alexander Konovalov, University of St Andrews.
+
+PROGRAMME COMMITTEE
+
+ Russel Bradford          University of Bath, England
+ Jean-Guillaume Dumas     Universite Grenoble, France
+ Jean-Charles Faugere (co-chair)   INRIA Paris-Rocquencourt, France
+ Joachim von zur Gathen   Universitaet Bonn, Germany
+ Pascal Giorgi            Universite Montpellier, France
+ Jeremy Johnson           Drexel University, USA
+ Erich Kaltofen           North Carolina State University, USA
+ Herbert Kuchen           University of Muenster, Germany
+ Marc Moreno Maza         Western University, Canada
+ Michael Monagan (co-chair)  Simon Fraser University, Canada
+ Clement Pernet           Universite Grenoble, France
+ Daniel Roche             US Naval Academy, Annapolis, USA
+ Wolfgang Schreiner       Johannes Kepler University, Linz, Austria
+ Allan Steel              University of Sydney, Australia
+ Emmanuel Thome           INRIA Nancy, France
+ 
+IMPORTANT DATES
+
+    Abstract due Monday April 24th (23:59 PST).
+    Papers due Sunday April 30th (23:59 PST).
+    Decisions to authors Wednesday May 31st (23:59 PST).
+    Final papers due Wednesday June 21st (23:59 PST).
+

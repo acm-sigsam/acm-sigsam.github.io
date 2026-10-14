@@ -1,0 +1,10 @@
+<div class="sidebar">
+  {%- comment -%}
+    Home page: a SIGSAM menu (Board, Bylaws) above the news.
+    Awards section (/awards/...): the award-category menu above the news.
+  {%- endcomment -%}
+  {% assign section = page.url | slice: 0, 8 %}
+  {% if page.url == "/" %}{% include home-menu.html %}{% endif %}
+  {% if section == "/awards/" %}{% include award-menu.html %}{% endif %}
+  {% include news-column.html %}
+</div>

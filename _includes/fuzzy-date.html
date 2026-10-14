@@ -1,0 +1,6 @@
+{%- comment -%} Print include.date only as precisely as include.precision (year, month or day) allows. {%- endcomment -%}
+{%- case include.precision -%}
+{%- when "year" -%}{{ include.date | date: "%Y" }}
+{%- when "month" -%}{{ include.date | date: "%B %Y" }}
+{%- else -%}{{ include.date | date: "%-d %B %Y" }}
+{%- endcase -%}

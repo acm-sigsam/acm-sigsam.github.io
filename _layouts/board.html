@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{%- comment -%}
+  One term of the SIGSAM Executive Committee. Front matter: title (term), start, end, start_precision,
+  end_precision, as_of, members [{role, group, officer (id in _officers), name, position, affiliation}], notes, sources.
+{%- endcomment -%}
+<article class="board">
+  <p class="kicker"><a href="{{ '/board/' | relative_url }}">Executive Committee</a></p>
+  <h1>Executive Committee {{ page.title }}</h1>
+  {% if page.start or page.end %}
+    <p class="lead">Term:
+      {% if page.start %}{% include fuzzy-date.html date=page.start precision=page.start_precision %}{% else %}?{% endif %}
+      –
+      {% if page.end %}{% include fuzzy-date.html date=page.end precision=page.end_precision %}{% else %}?{% endif %}
+    </p>
+  {% endif %}
+  {% if page.as_of %}<p class="small">As described for {{ page.as_of }}.</p>{% endif %}
+  {% assign groups = page.members | group_by: "group" %}
+  {% for g in groups %}
+    {% if g.name != "" %}<h2>{{ g.name }}</h2>{% endif %}
+    <div class="people-cards">
+    {% for m in g.items %}
+      {% assign o = site.officers | where: "slug", m.officer | first %}
+      <a class="person-card" href="{{ o.url | relative_url }}">
+        {% if o.photo %}<img src="{{ o.photo | relative_url }}" alt="" loading="lazy">{% else %}<span class="no-photo" aria-hidden="true"></span>{% endif %}
+        <span><span class="role">{{ m.role }}</span><strong>{{ m.name }}</strong>
+        <span class="small">{{ m.position }}{% if m.position and m.affiliation %}, {% endif %}{{ m.affiliation }}</span></span>
+      </a>
+    {% endfor %}
+    </div>
+  {% endfor %}
+  {% if page.notes.size > 0 %}
+    <h2>Notes</h2>
+    <ul class="notes">{% for n in page.notes %}<li>{{ n }}</li>{% endfor %}</ul>
+  {% endif %}
+  {{ content }}
+</article>
